@@ -43,6 +43,9 @@
     <a href="resources.html">5</a>
     <a href="newyork.html">&raquo;</a>
   </div>
+</div >
+
+<div id='status'>
 </div>
 
 <!-- Load d3.js -->
@@ -50,13 +53,18 @@
 <script src="utils.js"></script>
 <script>
   // LOAD & STRUCTURE DATA
-  let series = [];
+
+  function setStatus(msg) {
+      let ele = document.getElementById('status');
+      ele.innerHTML = 'msg';
+  }
+
   let ilCases = [];
   let nyCases = [];
   let caliCases = [];
   let dates = new Set();
-  const dateParser = d3.timeParse("%Y-%m-%d");
 
+  setStatus("1")
   d3.csv("us-states.csv", populateCasesByState, function () {
     zeroPadArrays(caliCases, nyCases);
 
@@ -70,6 +78,7 @@
       dates: [...dates],
     };
 
+      setStatus("2")
     // CONSTRUCT GRAPH CONTAINER
     const margin = { top: 80, right: 150, bottom: 60, left: 100 };
     const width = 700 - margin.left - margin.right;
@@ -82,6 +91,8 @@
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      setStatus("3")
 
     // CONSTRUCT LEGEND
     let legend = svg
@@ -114,6 +125,7 @@
         return d.name;
       });
 
+      setStatus("4")
     // CONSTRUCT AXES
     const xScale = d3
       .scaleTime()
@@ -132,6 +144,8 @@
       .range([height, 0]);
 
     svg.append("g").call(d3.axisLeft(yScale));
+
+      setStatus("6")
 
     svg
       .append("text")
