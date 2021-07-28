@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<link
+  href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  .pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  /* Style the active/current link */
+  .pagination a.active {
+    background-color: blue;
+    color: white;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+</style>
+<div align="center">
+  <h1>Coronavirus in 3 Different States</h1>
+  <p>
+    These are the 3 states with the most populous cities in the US - NYC, L.A.,
+    and Chicago. <br />
+    Let's see how each state has handled the coronavirus.
+  </p>
+  <p>Hover over the graph for more detail.</p>
+
+  <div id="container"></div>
+  <div class="pagination">
+    <a class="active" href="index.html">1</a>
+    <a href="newyork.html">2</a>
+    <a href="california..html">3</a>
+    <a href="illinois.html">4</a>
+    <a href="resources.html">5</a>
+    <a href="newyork.html">&raquo;</a>
+  </div>
+</div>
+
+<!-- Load d3.js -->
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src="helperFunctions.js"></script>
+<script>
+  // LOAD & STRUCTURE DATA
+  let series = [];
+  let ilCases = [];
+  let nyCases = [];
+  let caliCases = [];
+  let dates = new Set();
+  const dateParser = d3.timeParse("%Y-%m-%d");
+
+  d3.csv("us-states.csv", populateCasesByState, function () {
+    zeroPadArrays(caliCases, nyCases);
+
+    let data = {
+      y: "# Cases",
+      series: [
+        { name: "New York", color: "blue", cases: nyCases },
+        { name: "California", color: "green", cases: caliCases },
+        { name: "Illinois", color: "red", cases: ilCases },
+      ],
+      dates: [...dates],
+    };
+
+    // CONSTRUCT GRAPH CONTAINER
+    const margin = { top: 80, right: 150, bottom: 60, left: 100 };
+    const width = 700 - margin.left - margin.right;
+    const height = 500 - margin.top - margin.bottom;
+
+    let svg = d3
+      .select("#container")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // CONSTRUCT LEGEND
+    let legend = svg
+      .selectAll("g")
+      .data(data.series)
+      .enter()
+      .append("g")
+      .attr("class", "legend");
+
+    legend
+      .append("rect")
+      .attr("x", width + 60)
+      .attr("y", function (d, i) {
+        return i * 20;
+      })
+      .attr("width", 10)
+      .attr("height", 10)
+      .style("fill", function (d) {
+        console.log(d);
+        return d.color;
+      });
+
+    legend
+      .append("text")
+      .attr("x", width + 80)
+      .attr("y", function (d, i) {
+        return i * 20 + 9;
+      })
+      .text(function (d) {
+        return d.name;
+      });
+
+    // CONSTRUCT AXES
+    const xScale = d3
+      .scaleTime()
+      .domain(d3.extent(data.dates, (d) => d))
+      .range([0, width]);
+
+    svg
+      .append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(xScale));
+
+    const yScale = d3
+      .scaleLinear()
+      .domain([0, d3.max(data.series, (d) => d3.max(d.cases))])
+      .nice()
+      .range([height, 0]);
+
+    svg.append("g").call(d3.axisLeft(yScale));
+
+    svg
+      .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", -75)
+      .attr("x", -height / 2)
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("# Cases")
+      .style("font-family", "Lato")
+      .style("font-size", "14px");
+
+    // CONSTRUCT LINE GRAPH
+    let line = d3
+      .line()
+      .x((d, i) => xScale(data.dates[i]))
+      .y((d) => yScale(d));
+
+    svg
+      .append("path")
+      .attr("fill", "none")
+      .attr("stroke", data.series[0].color)
+      .attr("stroke-width", 1.5)
+      .attr("class", "line")
+      .attr("d", line(data.series[0].cases));
+
+    svg
+      .append("path")
+      .attr("fill", "none")
+      .attr("stroke", data.series[1].color)
+      .attr("stroke-width", 1.5)
+      .attr("class", "line")
+      .attr("d", line(data.series[1].cases));
+
+    svg
+      .append("path")
+      .attr("fill", "none")
+      .attr("stroke", data.series[2].color)
+      .attr("stroke-width", 1.5)
+      .attr("class", "line")
+      .attr("d", line(data.series[2].cases));
+
+    // CONSTRUCT TOOLTIP LINE
+    var mouseG = svg.append("g").attr("class", "mouse-over-effects");
+
+    mouseG
+      .append("path") // this is the black vertical line to follow mouse
+      .attr("class", "mouse-line")
+      .style("stroke", "black")
+      .style("stroke-width", "1px")
+      .style("opacity", "0");
+
+    var lines = document.getElementsByClassName("line");
+
+    var mousePerLine = mouseG
+      .selectAll(".mouse-per-line")
+      .data(data.series)
+      .enter()
+      .append("g")
+      .attr("class", "mouse-per-line");
+
+    mousePerLine
+      .append("circle")
+      .attr("r", 7)
+      .style("stroke", (d) => d.color)
+      .style("fill", "none")
+      .style("stroke-width", "1px")
+      .style("opacity", "0");
+
+    mousePerLine.append("text").attr("transform", "translate(10,3)");
+
+    mouseG
+      .append("svg:rect") // append a rect to catch mouse movements on canvas
+      .attr("width", width) // can't catch mouse events on a g element
+      .attr("height", height)
+      .attr("fill", "none")
+      .attr("pointer-events", "all")
+      .on("mouseout", function () {
+        // on mouse out hide line, circles and text
+        d3.select(".mouse-line").style("opacity", "0");
+        d3.selectAll(".mouse-per-line circle").style("opacity", "0");
+        d3.selectAll(".mouse-per-line text").style("opacity", "0");
+      })
+      .on("mouseover", function () {
+        // on mouse in show line, circles and text
+        d3.select(".mouse-line").style("opacity", "1");
+        d3.selectAll(".mouse-per-line circle").style("opacity", "1");
+        d3.selectAll(".mouse-per-line text").style("opacity", "1");
+      })
+      .on("mousemove", function () {
+        // mouse moving over canvas
+        var mouse = d3.mouse(this);
+        d3.select(".mouse-line").attr("d", function () {
+          var d = "M" + mouse[0] + "," + height;
+          d += " " + mouse[0] + "," + 0;
+          return d;
+        });
+
+        d3.selectAll(".mouse-per-line").attr("transform", function (d, i) {
+          console.log(d);
+          var xDate = xScale.invert(mouse[0]),
+            bisect = d3.bisector(function (d) {
+              return d.date;
+            }).right;
+          idx = bisect(d.cases, xDate);
+
+          var beginning = 0,
+            end = lines[i].getTotalLength(),
+            target = null;
+
+          while (true) {
+            target = Math.floor((beginning + end) / 2);
+            pos = lines[i].getPointAtLength(target);
+            if (
+              (target === end || target === beginning) &&
+              pos.x !== mouse[0]
+            ) {
+              break;
+            }
+            if (pos.x > mouse[0]) end = target;
+            else if (pos.x < mouse[0]) beginning = target;
+            else break; //position found
+          }
+
+          d3.select(this)
+            .select("text")
+            .text(yScale.invert(pos.y).toFixed(0))
+            .style("font-size", "12px");
+
+          return "translate(" + mouse[0] + "," + pos.y + ")";
+        });
+      });
+  });
+</script>
