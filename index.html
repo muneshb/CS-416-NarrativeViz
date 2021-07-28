@@ -26,7 +26,9 @@
   }
 </style>
 <script src='https://d3js.org/d3.v5.min.js'></script>
+
 <body onload='init()'>
+
 <div align="center">
   <h1>Corona cases in 2021 by country</h1>
   <p>
@@ -50,10 +52,10 @@
 <script>
     async function init() {
 
-        data = d3.csv("time_series_covid19_confirmed_global.csv", function(data) {
+        d3.csv("time_series_covid19_confirmed_global.csv", function(data) {
                 // List of groups (here I have one group per column)
-                var allGroup = d3.map(data, function(d){return(d.country)}).keys()
-                console.log(allGroup)
+                var allGroup = d3.map(data, function(d){return d.country;}).keys();
+                console.log(allGroup);
                 // add the options to the button
                 d3.select("#country")
                     .selectAll('myOptions')
@@ -63,7 +65,7 @@
                     .text(function (d) { return d; }) // text showed in the menu
                     .attr("value", function (d) { return d; }) // corresponding value returned by the button
             }
-        )
+        );
     }
 </script>
 </body>
