@@ -50,7 +50,7 @@
 <script>
     async function init() {
 
-        data = d3.csv("time_series_covid19_confirmed_global.csv", function(data) {
+        data = d3.csv("https://github.com/muneshb/CS-416-NarrativeViz/blob/gh-pages/time_series_covid19_confirmed_global.csv", function(data) {
                 // List of groups (here I have one group per column)
                 var allGroup = d3.map(data, function(d){return(d.country)}).keys()
                 console.log(allGroup)
