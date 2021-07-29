@@ -38,13 +38,13 @@ function populate_country(data) {
         .attr("value", function (d) { return d; }) // corresponding value by the action
 }
 
-function update_chart(lineChart, data, selectedCountry) {
+function update_chart(lineChartComp, line, data, selectedCountry) {
 
     country_data = data.filter(function(d) { return d.country == selectedCountry;})
 
     let cases = [...country_data.map(d => d.cases)];
 
-    lineChart.transition()
+    lineChartComp.transition()
         .duration(1000)
         .attr("d", line(cases));
 }
@@ -112,7 +112,7 @@ function initialize_chart(data, selectedCountry) {
         .x((d, i) => xScale(dates[i]))
         .y((d) => yScale(d));
 
-    lineChart = svg.append("g")
+    lineChartComp = svg.append("g")
         .append("path")
         .attr("fill", "none")
         .attr("stroke", line_color)
@@ -125,6 +125,6 @@ function initialize_chart(data, selectedCountry) {
         // recover the option that has been chosen
         var selectedOption = d3.select(this).property("value")
         // run the updateChart function with this selected option
-        update_chart(lineChart, data, selectedOption)
+        update_chart(lineChartComp, line, data, selectedOption)
     })
 }
