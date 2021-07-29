@@ -36,8 +36,8 @@ function initializeChart(data, selectedCountry, lineColor) {
 
     // CONSTRUCT GRAPH CONTAINER
     const margin = { top: 80, right: 150, bottom: 60, left: 100 };
-    const width = 1000 - margin.left - margin.right;
-    const height = 800 - margin.top - margin.bottom;
+    const width = 900 - margin.left - margin.right;
+    const height = 700 - margin.top - margin.bottom;
 
     let svg = d3
         .select("#container")
