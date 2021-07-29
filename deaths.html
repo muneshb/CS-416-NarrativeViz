@@ -26,8 +26,9 @@
   }
 </style>
 <script src='https://d3js.org/d3.v5.min.js'></script>
+<script src="utils.js"></script>
 
-<body onload='init()'>
+<body onload='init("data/time_series_covid19_deaths_global.csv")'>
 
 <div align="center">
   <h1>Corona cases in 2021 by country</h1>
@@ -48,18 +49,7 @@
 </div>
 
 <script>
-    async function init() {
-        data = await d3.csv("data/time_series_covid19_confirmed_global.csv")
 
-        // add the options to the button
-        d3.select("#country")
-            .selectAll('myOptions')
-            .data(data)
-            .enter()
-            .append('option')
-            .text(function (d) { return d.country; }) // text in the menu
-            .attr("value", function (d) { return d.country; }) // corresponding value by the action
-    }
 </script>
 </body>
 </html>

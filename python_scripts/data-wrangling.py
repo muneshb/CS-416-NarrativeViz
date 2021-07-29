@@ -10,8 +10,6 @@ def transform(file_name):
 	piv_df = df.melt(id_vars=["Province/State",	"country", "Lat", "Long"], \
 	        var_name="date", \
 	        value_name="cases").drop(["Province/State", "Lat", "Long"], axis = 1)
-	
-
 
 	piv_df['date'] = pd.to_datetime(piv_df['date'],format='%m/%d/%y')
 

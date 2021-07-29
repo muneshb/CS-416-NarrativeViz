@@ -17,3 +17,17 @@ function zeroPadArrays(caliCases, nyCases) {
     nyCases.unshift(0);
   }
 }
+
+async function init(file) {
+    data = await d3.csv(file)
+
+    let options = [...new Set(data.map(d => d.country))];
+    // add the options to the button
+    d3.select("#country")
+        .selectAll('myOptions')
+        .data(options)
+        .enter()
+        .append('option')
+        .text(function (d) { return d; }) // text in the menu
+        .attr("value", function (d) { return d; }) // corresponding value by the action
+}
