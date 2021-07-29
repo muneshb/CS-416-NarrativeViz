@@ -23,7 +23,7 @@ async function init(file) {
 
     populate_country(data)
 
-    initialize_chart(data)
+    initialize_chart(data, "US")
 }
 
 function populate_country(data) {
@@ -36,11 +36,19 @@ function populate_country(data) {
         .append('option')
         .text(function (d) { return d; }) // text in the menu
         .attr("value", function (d) { return d; }) // corresponding value by the action
+
+    // When the button is changed, run the updateChart function
+    d3.select("#country").on("change", function(d) {
+        // recover the option that has been chosen
+        var selectedOption = d3.select(this).property("value")
+        // run the updateChart function with this selected option
+        initialize_chart(data, selectedOption)
+    })
 }
 
-function initialize_chart(data) {
+function initialize_chart(data, selected_country) {
 
-    selected_country = "US"
+    // selected_country = "US"
     line_color = "blue"
 
     country_data = data.filter(function(d) { return d.country == selected_country;})
