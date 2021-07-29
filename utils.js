@@ -61,6 +61,7 @@ function initialize_chart(data) {
     const dateParser = d3.timeParse("%Y-%m-%d");
 
     let dates = [...country_data.map(d => dateParser(d.date))];
+    let cases = [...country_data.map(d => d.cases)];
 
     const xScale = d3
         .scaleTime()
@@ -74,7 +75,7 @@ function initialize_chart(data) {
 
     const yScale = d3
         .scaleLinear()
-        .domain([0, d3.max(country_data, (d) => d3.max(d.cases))])
+        .domain([0, d3.max(cases)])
         .nice()
         .range([height, 0]);
 
@@ -98,8 +99,8 @@ function initialize_chart(data) {
         .append("path")
         .datum(country_data)
         .attr("d", d3.line()
-            .x(function(d) { return xScale(d.date) })
-            .y(function(d) { return yScale(+d.cases) })
+            .x(function(d, i) { return dates[i]; })
+            .y(function(d, i) { return cases[i]; })
         )
         .attr("stroke", "steelblue" )
         .style("stroke-width", 4)
