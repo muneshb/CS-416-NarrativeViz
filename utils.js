@@ -41,7 +41,7 @@ function populate_country(data) {
 function initialize_chart(data) {
 
     selected_country = "US"
-    country_data = data.filter(function(d) {if (d.country == selected_country) return d;})
+    country_data = data.filter(function(d) { return d.country == selected_country;})
 
     // CONSTRUCT GRAPH CONTAINER
     const margin = { top: 80, right: 150, bottom: 60, left: 100 };
@@ -58,7 +58,9 @@ function initialize_chart(data) {
 
     // CONSTRUCT AXES
 
-    let dates = [...new Set(country_data.map(d => d.dates))];
+    const dateParser = d3.timeParse("%Y-%m-%d");
+
+    let dates = [...country_data.map(d => dateParser(d.date))];
 
     const xScale = d3
         .scaleTime()
@@ -89,9 +91,18 @@ function initialize_chart(data) {
         .style("font-family", "Lato")
         .style("font-size", "14px");
 
-    // CONSTRUCT LINE GRAPH
-    let line = d3
-        .line()
-        .x((d, i) => xScale(country_data.dates[i]))
-        .y((d) => yScale(d));
+    // LINE GRAPH
+
+    var line = svg
+        .append('g')
+        .append("path")
+        .datum(country_data)
+        .attr("d", d3.line()
+            .x(function(d) { return xScale(d.date) })
+            .y(function(d) { return yScale(+d.cases) })
+        )
+        .attr("stroke", "steelblue" )
+        .style("stroke-width", 4)
+        .style("fill", "none")
+
 }
