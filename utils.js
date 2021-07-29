@@ -94,16 +94,17 @@ function initialize_chart(data) {
 
     // LINE GRAPH
 
-    var line = svg
-        .append('g')
+    let line = d3
+        .line()
+        .x((d, i) => xScale(dates[i]))
+        .y((d, i) => yScale(d));
+
+    svg
         .append("path")
-        .datum(country_data)
-        .attr("d", d3.line()
-            .x(function(d, i) { return dates[i]; })
-            .y(function(d, i) { return cases[i]; })
-        )
-        .attr("stroke", "steelblue" )
-        .style("stroke-width", 4)
-        .style("fill", "none")
+        .attr("fill", "none")
+        // .attr("stroke", data.series[0].color)
+        .attr("stroke-width", 1.5)
+        .attr("class", "line")
+        .attr("d", line(cases));
 
 }
