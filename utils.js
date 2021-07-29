@@ -36,22 +36,25 @@ function populate_country(data) {
         .append('option')
         .text(function (d) { return d; }) // text in the menu
         .attr("value", function (d) { return d; }) // corresponding value by the action
-
-    // When the button is changed, run the updateChart function
-    d3.select("#country").on("change", function(d) {
-        // recover the option that has been chosen
-        var selectedOption = d3.select(this).property("value")
-        // run the updateChart function with this selected option
-        initialize_chart(data, selectedOption)
-    })
 }
 
-function initialize_chart(data, selected_country) {
+function update_chart(lineChart, data, selectedCountry) {
+
+    country_data = data.filter(function(d) { return d.country == selectedCountry;})
+
+    let cases = [...country_data.map(d => d.cases)];
+
+    lineChart.transition()
+        .duration(1000)
+        .attr("d", line(cases));
+}
+
+function initialize_chart(data, selectedCountry) {
 
     // selected_country = "US"
     line_color = "blue"
 
-    country_data = data.filter(function(d) { return d.country == selected_country;})
+    country_data = data.filter(function(d) { return d.country == selectedCountry;})
 
     // CONSTRUCT GRAPH CONTAINER
     const margin = { top: 80, right: 150, bottom: 60, left: 100 };
@@ -109,7 +112,7 @@ function initialize_chart(data, selected_country) {
         .x((d, i) => xScale(dates[i]))
         .y((d) => yScale(d));
 
-    svg.append("g")
+    lineChart = svg.append("g")
         .append("path")
         .attr("fill", "none")
         .attr("stroke", line_color)
@@ -117,4 +120,11 @@ function initialize_chart(data, selected_country) {
         .attr("class", "line")
         .attr("d", line(cases));
 
+    // When the button is changed, run the updateChart function
+    d3.select("#country").on("change", function(d) {
+        // recover the option that has been chosen
+        var selectedOption = d3.select(this).property("value")
+        // run the updateChart function with this selected option
+        update_chart(lineChart, data, selectedOption)
+    })
 }
