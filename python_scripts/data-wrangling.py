@@ -1,8 +1,6 @@
 import pandas as pd
 
-file_path = "/Users/mbandaru/illinois_workspace/Data Visualization/Week 4/Data/COVID-19-master-Cases/csse_covid_19_data/csse_covid_19_time_series/"
-
-confirmed_file = "time_series_covid19_confirmed_global.csv"
+file_path = "./../raw_data/"
 
 def transform(file_name):
 	df = pd.read_csv(file_path + file_name)
@@ -18,10 +16,20 @@ def transform(file_name):
 	piv_df['date'] = pd.to_datetime(piv_df['date'],format='%m/%d/%y')
 
 	refined_df = piv_df.where((piv_df.date >= "2021-01-01") & (piv_df.date.dt.day == 1)).dropna()
+	result_df = refined_df.groupby(['country', 'date']).sum()
 
-	refined_df.to_csv(file_name, index=False)
+	result_df.to_csv("./../data/" + file_name)
+
+confirmed_file = "time_series_covid19_confirmed_global.csv"
+deaths_file = "time_series_covid19_deaths_global.csv"
+recovered_file = "time_series_covid19_recovered_global.csv"
 
 transform(confirmed_file)
+transform(deaths_file)
+transform(recovered_file)
+
+print("Saved files to data folder")
+
 
 
 

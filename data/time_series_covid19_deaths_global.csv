@@ -1,0 +1,1366 @@
+country,date,cases
+Afghanistan,2021-01-01,2191.0
+Afghanistan,2021-02-01,2404.0
+Afghanistan,2021-03-01,2444.0
+Afghanistan,2021-04-01,2489.0
+Afghanistan,2021-05-01,2631.0
+Afghanistan,2021-06-01,2973.0
+Afghanistan,2021-07-01,4962.0
+Albania,2021-01-01,1181.0
+Albania,2021-02-01,1393.0
+Albania,2021-03-01,1816.0
+Albania,2021-04-01,2241.0
+Albania,2021-05-01,2396.0
+Albania,2021-06-01,2451.0
+Albania,2021-07-01,2456.0
+Algeria,2021-01-01,2762.0
+Algeria,2021-02-01,2894.0
+Algeria,2021-03-01,2987.0
+Algeria,2021-04-01,3096.0
+Algeria,2021-05-01,3261.0
+Algeria,2021-06-01,3480.0
+Algeria,2021-07-01,3726.0
+Andorra,2021-01-01,84.0
+Andorra,2021-02-01,101.0
+Andorra,2021-03-01,110.0
+Andorra,2021-04-01,115.0
+Andorra,2021-05-01,125.0
+Andorra,2021-06-01,127.0
+Andorra,2021-07-01,127.0
+Angola,2021-01-01,405.0
+Angola,2021-02-01,466.0
+Angola,2021-03-01,508.0
+Angola,2021-04-01,538.0
+Angola,2021-05-01,600.0
+Angola,2021-06-01,772.0
+Angola,2021-07-01,903.0
+Antigua and Barbuda,2021-01-01,5.0
+Antigua and Barbuda,2021-02-01,7.0
+Antigua and Barbuda,2021-03-01,14.0
+Antigua and Barbuda,2021-04-01,28.0
+Antigua and Barbuda,2021-05-01,32.0
+Antigua and Barbuda,2021-06-01,42.0
+Antigua and Barbuda,2021-07-01,42.0
+Argentina,2021-01-01,43319.0
+Argentina,2021-02-01,48249.0
+Argentina,2021-03-01,52077.0
+Argentina,2021-04-01,55941.0
+Argentina,2021-05-01,64096.0
+Argentina,2021-06-01,78733.0
+Argentina,2021-07-01,94772.0
+Armenia,2021-01-01,2828.0
+Armenia,2021-02-01,3084.0
+Armenia,2021-03-01,3195.0
+Armenia,2021-04-01,3533.0
+Armenia,2021-05-01,4128.0
+Armenia,2021-06-01,4445.0
+Armenia,2021-07-01,4517.0
+Australia,2021-01-01,909.0
+Australia,2021-02-01,909.0
+Australia,2021-03-01,909.0
+Australia,2021-04-01,909.0
+Australia,2021-05-01,910.0
+Australia,2021-06-01,910.0
+Australia,2021-07-01,910.0
+Austria,2021-01-01,6261.0
+Austria,2021-02-01,7778.0
+Austria,2021-03-01,8574.0
+Austria,2021-04-01,9368.0
+Austria,2021-05-01,10233.0
+Austria,2021-06-01,10615.0
+Austria,2021-07-01,10706.0
+Azerbaijan,2021-01-01,2670.0
+Azerbaijan,2021-02-01,3136.0
+Azerbaijan,2021-03-01,3223.0
+Azerbaijan,2021-04-01,3593.0
+Azerbaijan,2021-05-01,4538.0
+Azerbaijan,2021-06-01,4921.0
+Azerbaijan,2021-07-01,4975.0
+Bahamas,2021-01-01,171.0
+Bahamas,2021-02-01,176.0
+Bahamas,2021-03-01,179.0
+Bahamas,2021-04-01,188.0
+Bahamas,2021-05-01,199.0
+Bahamas,2021-06-01,230.0
+Bahamas,2021-07-01,246.0
+Bahrain,2021-01-01,352.0
+Bahrain,2021-02-01,376.0
+Bahrain,2021-03-01,452.0
+Bahrain,2021-04-01,523.0
+Bahrain,2021-05-01,648.0
+Bahrain,2021-06-01,1009.0
+Bahrain,2021-07-01,1353.0
+Bangladesh,2021-01-01,7576.0
+Bangladesh,2021-02-01,8137.0
+Bangladesh,2021-03-01,8416.0
+Bangladesh,2021-04-01,9105.0
+Bangladesh,2021-05-01,11510.0
+Bangladesh,2021-06-01,12660.0
+Bangladesh,2021-07-01,14646.0
+Barbados,2021-01-01,7.0
+Barbados,2021-02-01,14.0
+Barbados,2021-03-01,36.0
+Barbados,2021-04-01,42.0
+Barbados,2021-05-01,44.0
+Barbados,2021-06-01,47.0
+Barbados,2021-07-01,47.0
+Belarus,2021-01-01,1433.0
+Belarus,2021-02-01,1728.0
+Belarus,2021-03-01,1985.0
+Belarus,2021-04-01,2257.0
+Belarus,2021-05-01,2552.0
+Belarus,2021-06-01,2861.0
+Belarus,2021-07-01,3153.0
+Belgium,2021-01-01,19581.0
+Belgium,2021-02-01,21124.0
+Belgium,2021-03-01,22106.0
+Belgium,2021-04-01,23045.0
+Belgium,2021-05-01,24258.0
+Belgium,2021-06-01,24968.0
+Belgium,2021-07-01,25180.0
+Belize,2021-01-01,248.0
+Belize,2021-02-01,302.0
+Belize,2021-03-01,315.0
+Belize,2021-04-01,317.0
+Belize,2021-05-01,323.0
+Belize,2021-06-01,325.0
+Belize,2021-07-01,329.0
+Benin,2021-01-01,44.0
+Benin,2021-02-01,52.0
+Benin,2021-03-01,70.0
+Benin,2021-04-01,93.0
+Benin,2021-05-01,99.0
+Benin,2021-06-01,101.0
+Benin,2021-07-01,104.0
+Bhutan,2021-01-01,0.0
+Bhutan,2021-02-01,1.0
+Bhutan,2021-03-01,1.0
+Bhutan,2021-04-01,1.0
+Bhutan,2021-05-01,1.0
+Bhutan,2021-06-01,1.0
+Bhutan,2021-07-01,1.0
+Bolivia,2021-01-01,9175.0
+Bolivia,2021-02-01,10439.0
+Bolivia,2021-03-01,11666.0
+Bolivia,2021-04-01,12280.0
+Bolivia,2021-05-01,13009.0
+Bolivia,2021-06-01,14639.0
+Bolivia,2021-07-01,16822.0
+Bosnia and Herzegovina,2021-01-01,4086.0
+Bosnia and Herzegovina,2021-02-01,4724.0
+Bosnia and Herzegovina,2021-03-01,5071.0
+Bosnia and Herzegovina,2021-04-01,6675.0
+Bosnia and Herzegovina,2021-05-01,8551.0
+Bosnia and Herzegovina,2021-06-01,9270.0
+Bosnia and Herzegovina,2021-07-01,9667.0
+Botswana,2021-01-01,42.0
+Botswana,2021-02-01,148.0
+Botswana,2021-03-01,332.0
+Botswana,2021-04-01,591.0
+Botswana,2021-05-01,712.0
+Botswana,2021-06-01,849.0
+Botswana,2021-07-01,1158.0
+Brazil,2021-01-01,195411.0
+Brazil,2021-02-01,225099.0
+Brazil,2021-03-01,255720.0
+Brazil,2021-04-01,325284.0
+Brazil,2021-05-01,406437.0
+Brazil,2021-06-01,465199.0
+Brazil,2021-07-01,520095.0
+Brunei,2021-01-01,3.0
+Brunei,2021-02-01,3.0
+Brunei,2021-03-01,3.0
+Brunei,2021-04-01,3.0
+Brunei,2021-05-01,3.0
+Brunei,2021-06-01,3.0
+Brunei,2021-07-01,3.0
+Bulgaria,2021-01-01,7604.0
+Bulgaria,2021-02-01,9142.0
+Bulgaria,2021-03-01,10308.0
+Bulgaria,2021-04-01,13313.0
+Bulgaria,2021-05-01,16444.0
+Bulgaria,2021-06-01,17726.0
+Bulgaria,2021-07-01,18067.0
+Burkina Faso,2021-01-01,85.0
+Burkina Faso,2021-02-01,121.0
+Burkina Faso,2021-03-01,143.0
+Burkina Faso,2021-04-01,149.0
+Burkina Faso,2021-05-01,157.0
+Burkina Faso,2021-06-01,167.0
+Burkina Faso,2021-07-01,168.0
+Burma,2021-01-01,2697.0
+Burma,2021-02-01,3138.0
+Burma,2021-03-01,3199.0
+Burma,2021-04-01,3206.0
+Burma,2021-05-01,3209.0
+Burma,2021-06-01,3217.0
+Burma,2021-07-01,3347.0
+Burundi,2021-01-01,2.0
+Burundi,2021-02-01,2.0
+Burundi,2021-03-01,3.0
+Burundi,2021-04-01,6.0
+Burundi,2021-05-01,6.0
+Burundi,2021-06-01,6.0
+Burundi,2021-07-01,8.0
+Cabo Verde,2021-01-01,113.0
+Cabo Verde,2021-02-01,134.0
+Cabo Verde,2021-03-01,147.0
+Cabo Verde,2021-04-01,169.0
+Cabo Verde,2021-05-01,220.0
+Cabo Verde,2021-06-01,264.0
+Cabo Verde,2021-07-01,287.0
+Cambodia,2021-01-01,0.0
+Cambodia,2021-02-01,0.0
+Cambodia,2021-03-01,0.0
+Cambodia,2021-04-01,14.0
+Cambodia,2021-05-01,96.0
+Cambodia,2021-06-01,220.0
+Cambodia,2021-07-01,628.0
+Cameroon,2021-01-01,448.0
+Cameroon,2021-02-01,462.0
+Cameroon,2021-03-01,551.0
+Cameroon,2021-04-01,851.0
+Cameroon,2021-05-01,1107.0
+Cameroon,2021-06-01,1275.0
+Cameroon,2021-07-01,1324.0
+Canada,2021-01-01,15806.0
+Canada,2021-02-01,20145.0
+Canada,2021-03-01,22014.0
+Canada,2021-04-01,22998.0
+Canada,2021-05-01,24245.0
+Canada,2021-06-01,25546.0
+Canada,2021-07-01,26273.0
+Central African Republic,2021-01-01,63.0
+Central African Republic,2021-02-01,63.0
+Central African Republic,2021-03-01,63.0
+Central African Republic,2021-04-01,72.0
+Central African Republic,2021-05-01,88.0
+Central African Republic,2021-06-01,98.0
+Central African Republic,2021-07-01,98.0
+Chad,2021-01-01,104.0
+Chad,2021-02-01,121.0
+Chad,2021-03-01,140.0
+Chad,2021-04-01,164.0
+Chad,2021-05-01,170.0
+Chad,2021-06-01,173.0
+Chad,2021-07-01,174.0
+Chile,2021-01-01,16660.0
+Chile,2021-02-01,18537.0
+Chile,2021-03-01,20660.0
+Chile,2021-04-01,23328.0
+Chile,2021-05-01,26457.0
+Chile,2021-06-01,29344.0
+Chile,2021-07-01,32588.0
+China,2021-01-01,4782.0
+China,2021-02-01,4818.0
+China,2021-03-01,4836.0
+China,2021-04-01,4841.0
+China,2021-05-01,4846.0
+China,2021-06-01,4846.0
+China,2021-07-01,4847.0
+Colombia,2021-01-01,43495.0
+Colombia,2021-02-01,54272.0
+Colombia,2021-03-01,59866.0
+Colombia,2021-04-01,63614.0
+Colombia,2021-05-01,73992.0
+Colombia,2021-06-01,89297.0
+Colombia,2021-07-01,107137.0
+Comoros,2021-01-01,10.0
+Comoros,2021-02-01,98.0
+Comoros,2021-03-01,144.0
+Comoros,2021-04-01,146.0
+Comoros,2021-05-01,146.0
+Comoros,2021-06-01,146.0
+Comoros,2021-07-01,146.0
+Congo (Brazzaville),2021-01-01,108.0
+Congo (Brazzaville),2021-02-01,117.0
+Congo (Brazzaville),2021-03-01,128.0
+Congo (Brazzaville),2021-04-01,135.0
+Congo (Brazzaville),2021-05-01,144.0
+Congo (Brazzaville),2021-06-01,153.0
+Congo (Brazzaville),2021-07-01,166.0
+Congo (Kinshasa),2021-01-01,591.0
+Congo (Kinshasa),2021-02-01,673.0
+Congo (Kinshasa),2021-03-01,707.0
+Congo (Kinshasa),2021-04-01,745.0
+Congo (Kinshasa),2021-05-01,768.0
+Congo (Kinshasa),2021-06-01,782.0
+Congo (Kinshasa),2021-07-01,933.0
+Costa Rica,2021-01-01,2185.0
+Costa Rica,2021-02-01,2634.0
+Costa Rica,2021-03-01,2812.0
+Costa Rica,2021-04-01,2957.0
+Costa Rica,2021-05-01,3231.0
+Costa Rica,2021-06-01,4074.0
+Costa Rica,2021-07-01,4674.0
+Cote d'Ivoire,2021-01-01,138.0
+Cote d'Ivoire,2021-02-01,156.0
+Cote d'Ivoire,2021-03-01,193.0
+Cote d'Ivoire,2021-04-01,244.0
+Cote d'Ivoire,2021-05-01,286.0
+Cote d'Ivoire,2021-06-01,306.0
+Cote d'Ivoire,2021-07-01,315.0
+Croatia,2021-01-01,3961.0
+Croatia,2021-02-01,5054.0
+Croatia,2021-03-01,5537.0
+Croatia,2021-04-01,5967.0
+Croatia,2021-05-01,7130.0
+Croatia,2021-06-01,8034.0
+Croatia,2021-07-01,8209.0
+Cuba,2021-01-01,146.0
+Cuba,2021-02-01,216.0
+Cuba,2021-03-01,324.0
+Cuba,2021-04-01,425.0
+Cuba,2021-05-01,654.0
+Cuba,2021-06-01,965.0
+Cuba,2021-07-01,1302.0
+Cyprus,2021-01-01,127.0
+Cyprus,2021-02-01,202.0
+Cyprus,2021-03-01,231.0
+Cyprus,2021-04-01,260.0
+Cyprus,2021-05-01,312.0
+Cyprus,2021-06-01,360.0
+Cyprus,2021-07-01,374.0
+Czechia,2021-01-01,11711.0
+Czechia,2021-02-01,16392.0
+Czechia,2021-03-01,20469.0
+Czechia,2021-04-01,26586.0
+Czechia,2021-05-01,29316.0
+Czechia,2021-06-01,30119.0
+Czechia,2021-07-01,30304.0
+Denmark,2021-01-01,1322.0
+Denmark,2021-02-01,2146.0
+Denmark,2021-03-01,2366.0
+Denmark,2021-04-01,2424.0
+Denmark,2021-05-01,2490.0
+Denmark,2021-06-01,2517.0
+Denmark,2021-07-01,2536.0
+Diamond Princess,2021-01-01,13.0
+Diamond Princess,2021-02-01,13.0
+Diamond Princess,2021-03-01,13.0
+Diamond Princess,2021-04-01,13.0
+Diamond Princess,2021-05-01,13.0
+Diamond Princess,2021-06-01,13.0
+Diamond Princess,2021-07-01,13.0
+Djibouti,2021-01-01,61.0
+Djibouti,2021-02-01,63.0
+Djibouti,2021-03-01,63.0
+Djibouti,2021-04-01,71.0
+Djibouti,2021-05-01,145.0
+Djibouti,2021-06-01,154.0
+Djibouti,2021-07-01,155.0
+Dominica,2021-01-01,0.0
+Dominica,2021-02-01,0.0
+Dominica,2021-03-01,0.0
+Dominica,2021-04-01,0.0
+Dominica,2021-05-01,0.0
+Dominica,2021-06-01,0.0
+Dominica,2021-07-01,0.0
+Dominican Republic,2021-01-01,2416.0
+Dominican Republic,2021-02-01,2688.0
+Dominican Republic,2021-03-01,3106.0
+Dominican Republic,2021-04-01,3330.0
+Dominican Republic,2021-05-01,3487.0
+Dominican Republic,2021-06-01,3634.0
+Dominican Republic,2021-07-01,3840.0
+Ecuador,2021-01-01,14051.0
+Ecuador,2021-02-01,14890.0
+Ecuador,2021-03-01,15832.0
+Ecuador,2021-04-01,16877.0
+Ecuador,2021-05-01,18724.0
+Ecuador,2021-06-01,20620.0
+Ecuador,2021-07-01,21605.0
+Egypt,2021-01-01,7687.0
+Egypt,2021-02-01,9360.0
+Egypt,2021-03-01,10736.0
+Egypt,2021-04-01,12041.0
+Egypt,2021-05-01,13402.0
+Egypt,2021-06-01,15136.0
+Egypt,2021-07-01,16194.0
+El Salvador,2021-01-01,1327.0
+El Salvador,2021-02-01,1632.0
+El Salvador,2021-03-01,1861.0
+El Salvador,2021-04-01,2006.0
+El Salvador,2021-05-01,2124.0
+El Salvador,2021-06-01,2252.0
+El Salvador,2021-07-01,2387.0
+Equatorial Guinea,2021-01-01,86.0
+Equatorial Guinea,2021-02-01,86.0
+Equatorial Guinea,2021-03-01,92.0
+Equatorial Guinea,2021-04-01,103.0
+Equatorial Guinea,2021-05-01,112.0
+Equatorial Guinea,2021-06-01,118.0
+Equatorial Guinea,2021-07-01,122.0
+Eritrea,2021-01-01,3.0
+Eritrea,2021-02-01,7.0
+Eritrea,2021-03-01,7.0
+Eritrea,2021-04-01,10.0
+Eritrea,2021-05-01,10.0
+Eritrea,2021-06-01,14.0
+Eritrea,2021-07-01,25.0
+Estonia,2021-01-01,234.0
+Estonia,2021-02-01,422.0
+Estonia,2021-03-01,598.0
+Estonia,2021-04-01,908.0
+Estonia,2021-05-01,1166.0
+Estonia,2021-06-01,1258.0
+Estonia,2021-07-01,1269.0
+Eswatini,2021-01-01,216.0
+Eswatini,2021-02-01,574.0
+Eswatini,2021-03-01,652.0
+Eswatini,2021-04-01,668.0
+Eswatini,2021-05-01,671.0
+Eswatini,2021-06-01,673.0
+Eswatini,2021-07-01,678.0
+Ethiopia,2021-01-01,1937.0
+Ethiopia,2021-02-01,2103.0
+Ethiopia,2021-03-01,2373.0
+Ethiopia,2021-04-01,2890.0
+Ethiopia,2021-05-01,3709.0
+Ethiopia,2021-06-01,4171.0
+Ethiopia,2021-07-01,4325.0
+Fiji,2021-01-01,2.0
+Fiji,2021-02-01,2.0
+Fiji,2021-03-01,2.0
+Fiji,2021-04-01,2.0
+Fiji,2021-05-01,2.0
+Fiji,2021-06-01,4.0
+Fiji,2021-07-01,24.0
+Finland,2021-01-01,561.0
+Finland,2021-02-01,677.0
+Finland,2021-03-01,750.0
+Finland,2021-04-01,846.0
+Finland,2021-05-01,914.0
+Finland,2021-06-01,956.0
+Finland,2021-07-01,973.0
+France,2021-01-01,64892.0
+France,2021-02-01,76657.0
+France,2021-03-01,86955.0
+France,2021-04-01,96106.0
+France,2021-05-01,104867.0
+France,2021-06-01,109824.0
+France,2021-07-01,111298.0
+Gabon,2021-01-01,64.0
+Gabon,2021-02-01,68.0
+Gabon,2021-03-01,87.0
+Gabon,2021-04-01,118.0
+Gabon,2021-05-01,139.0
+Gabon,2021-06-01,152.0
+Gabon,2021-07-01,159.0
+Gambia,2021-01-01,124.0
+Gambia,2021-02-01,131.0
+Gambia,2021-03-01,150.0
+Gambia,2021-04-01,165.0
+Gambia,2021-05-01,174.0
+Gambia,2021-06-01,179.0
+Gambia,2021-07-01,181.0
+Georgia,2021-01-01,2528.0
+Georgia,2021-02-01,3194.0
+Georgia,2021-03-01,3520.0
+Georgia,2021-04-01,3785.0
+Georgia,2021-05-01,4130.0
+Georgia,2021-06-01,4804.0
+Georgia,2021-07-01,5327.0
+Germany,2021-01-01,34145.0
+Germany,2021-02-01,58059.0
+Germany,2021-03-01,70514.0
+Germany,2021-04-01,76823.0
+Germany,2021-05-01,83207.0
+Germany,2021-06-01,88781.0
+Germany,2021-07-01,91014.0
+Ghana,2021-01-01,335.0
+Ghana,2021-02-01,416.0
+Ghana,2021-03-01,607.0
+Ghana,2021-04-01,743.0
+Ghana,2021-05-01,779.0
+Ghana,2021-06-01,785.0
+Ghana,2021-07-01,796.0
+Greece,2021-01-01,4881.0
+Greece,2021-02-01,5829.0
+Greece,2021-03-01,6534.0
+Greece,2021-04-01,8160.0
+Greece,2021-05-01,10453.0
+Greece,2021-06-01,12122.0
+Greece,2021-07-01,12691.0
+Grenada,2021-01-01,0.0
+Grenada,2021-02-01,1.0
+Grenada,2021-03-01,1.0
+Grenada,2021-04-01,1.0
+Grenada,2021-05-01,1.0
+Grenada,2021-06-01,1.0
+Grenada,2021-07-01,1.0
+Guatemala,2021-01-01,4820.0
+Guatemala,2021-02-01,5673.0
+Guatemala,2021-03-01,6402.0
+Guatemala,2021-04-01,6860.0
+Guatemala,2021-05-01,7543.0
+Guatemala,2021-06-01,8183.0
+Guatemala,2021-07-01,9282.0
+Guinea,2021-01-01,81.0
+Guinea,2021-02-01,83.0
+Guinea,2021-03-01,89.0
+Guinea,2021-04-01,127.0
+Guinea,2021-05-01,144.0
+Guinea,2021-06-01,162.0
+Guinea,2021-07-01,172.0
+Guinea-Bissau,2021-01-01,45.0
+Guinea-Bissau,2021-02-01,45.0
+Guinea-Bissau,2021-03-01,48.0
+Guinea-Bissau,2021-04-01,63.0
+Guinea-Bissau,2021-05-01,67.0
+Guinea-Bissau,2021-06-01,68.0
+Guinea-Bissau,2021-07-01,69.0
+Guyana,2021-01-01,164.0
+Guyana,2021-02-01,177.0
+Guyana,2021-03-01,197.0
+Guyana,2021-04-01,233.0
+Guyana,2021-05-01,298.0
+Guyana,2021-06-01,391.0
+Guyana,2021-07-01,473.0
+Haiti,2021-01-01,236.0
+Haiti,2021-02-01,245.0
+Haiti,2021-03-01,250.0
+Haiti,2021-04-01,252.0
+Haiti,2021-05-01,254.0
+Haiti,2021-06-01,317.0
+Haiti,2021-07-01,436.0
+Holy See,2021-01-01,0.0
+Holy See,2021-02-01,0.0
+Holy See,2021-03-01,0.0
+Holy See,2021-04-01,0.0
+Holy See,2021-05-01,0.0
+Holy See,2021-06-01,0.0
+Holy See,2021-07-01,0.0
+Honduras,2021-01-01,3160.0
+Honduras,2021-02-01,3610.0
+Honduras,2021-03-01,4174.0
+Honduras,2021-04-01,4622.0
+Honduras,2021-05-01,5318.0
+Honduras,2021-06-01,6379.0
+Honduras,2021-07-01,7030.0
+Hungary,2021-01-01,9667.0
+Hungary,2021-02-01,12578.0
+Hungary,2021-03-01,15058.0
+Hungary,2021-04-01,20995.0
+Hungary,2021-05-01,27701.0
+Hungary,2021-06-01,29761.0
+Hungary,2021-07-01,29992.0
+Iceland,2021-01-01,29.0
+Iceland,2021-02-01,29.0
+Iceland,2021-03-01,29.0
+Iceland,2021-04-01,29.0
+Iceland,2021-05-01,29.0
+Iceland,2021-06-01,30.0
+Iceland,2021-07-01,30.0
+India,2021-01-01,149474.0
+India,2021-02-01,154486.0
+India,2021-03-01,157248.0
+India,2021-04-01,163396.0
+India,2021-05-01,215542.0
+India,2021-06-01,335102.0
+India,2021-07-01,400312.0
+Indonesia,2021-01-01,22329.0
+Indonesia,2021-02-01,30277.0
+Indonesia,2021-03-01,36325.0
+Indonesia,2021-04-01,41054.0
+Indonesia,2021-05-01,45652.0
+Indonesia,2021-06-01,50723.0
+Indonesia,2021-07-01,58995.0
+Iran,2021-01-01,55337.0
+Iran,2021-02-01,58038.0
+Iran,2021-03-01,60181.0
+Iran,2021-04-01,62759.0
+Iran,2021-05-01,72090.0
+Iran,2021-06-01,80327.0
+Iran,2021-07-01,84389.0
+Iraq,2021-01-01,12824.0
+Iraq,2021-02-01,13057.0
+Iraq,2021-03-01,13428.0
+Iraq,2021-04-01,14360.0
+Iraq,2021-05-01,15498.0
+Iraq,2021-06-01,16405.0
+Iraq,2021-07-01,17216.0
+Ireland,2021-01-01,2248.0
+Ireland,2021-02-01,3317.0
+Ireland,2021-03-01,4319.0
+Ireland,2021-04-01,4705.0
+Ireland,2021-05-01,4906.0
+Ireland,2021-06-01,4941.0
+Ireland,2021-07-01,5000.0
+Israel,2021-01-01,3356.0
+Israel,2021-02-01,4816.0
+Israel,2021-03-01,5760.0
+Israel,2021-04-01,6220.0
+Israel,2021-05-01,6363.0
+Israel,2021-06-01,6413.0
+Israel,2021-07-01,6429.0
+Italy,2021-01-01,74621.0
+Italy,2021-02-01,88845.0
+Italy,2021-03-01,97945.0
+Italy,2021-04-01,109847.0
+Italy,2021-05-01,121033.0
+Italy,2021-06-01,126221.0
+Italy,2021-07-01,127587.0
+Jamaica,2021-01-01,303.0
+Jamaica,2021-02-01,352.0
+Jamaica,2021-03-01,425.0
+Jamaica,2021-04-01,599.0
+Jamaica,2021-05-01,779.0
+Jamaica,2021-06-01,949.0
+Jamaica,2021-07-01,1080.0
+Japan,2021-01-01,3540.0
+Japan,2021-02-01,5833.0
+Japan,2021-03-01,7940.0
+Japan,2021-04-01,9173.0
+Japan,2021-05-01,10281.0
+Japan,2021-06-01,13107.0
+Japan,2021-07-01,14754.0
+Jordan,2021-01-01,3851.0
+Jordan,2021-02-01,4326.0
+Jordan,2021-03-01,4727.0
+Jordan,2021-04-01,6940.0
+Jordan,2021-05-01,8871.0
+Jordan,2021-06-01,9472.0
+Jordan,2021-07-01,9756.0
+Kazakhstan,2021-01-01,2765.0
+Kazakhstan,2021-02-01,3046.0
+Kazakhstan,2021-03-01,3168.0
+Kazakhstan,2021-04-01,3234.0
+Kazakhstan,2021-05-01,3341.0
+Kazakhstan,2021-06-01,3974.0
+Kazakhstan,2021-07-01,4375.0
+Kenya,2021-01-01,1681.0
+Kenya,2021-02-01,1766.0
+Kenya,2021-03-01,1859.0
+Kenya,2021-04-01,2167.0
+Kenya,2021-05-01,2744.0
+Kenya,2021-06-01,3188.0
+Kenya,2021-07-01,3640.0
+Kiribati,2021-01-01,0.0
+Kiribati,2021-02-01,0.0
+Kiribati,2021-03-01,0.0
+Kiribati,2021-04-01,0.0
+Kiribati,2021-05-01,0.0
+Kiribati,2021-06-01,0.0
+Kiribati,2021-07-01,0.0
+"Korea, South",2021-01-01,942.0
+"Korea, South",2021-02-01,1435.0
+"Korea, South",2021-03-01,1606.0
+"Korea, South",2021-04-01,1737.0
+"Korea, South",2021-05-01,1833.0
+"Korea, South",2021-06-01,1965.0
+"Korea, South",2021-07-01,2024.0
+Kosovo,2021-01-01,1336.0
+Kosovo,2021-02-01,1498.0
+Kosovo,2021-03-01,1592.0
+Kosovo,2021-04-01,1892.0
+Kosovo,2021-05-01,2134.0
+Kosovo,2021-06-01,2248.0
+Kosovo,2021-07-01,2262.0
+Kuwait,2021-01-01,936.0
+Kuwait,2021-02-01,959.0
+Kuwait,2021-03-01,1085.0
+Kuwait,2021-04-01,1319.0
+Kuwait,2021-05-01,1569.0
+Kuwait,2021-06-01,1775.0
+Kuwait,2021-07-01,1979.0
+Kyrgyzstan,2021-01-01,1356.0
+Kyrgyzstan,2021-02-01,1412.0
+Kyrgyzstan,2021-03-01,1467.0
+Kyrgyzstan,2021-04-01,1500.0
+Kyrgyzstan,2021-05-01,1612.0
+Kyrgyzstan,2021-06-01,1815.0
+Kyrgyzstan,2021-07-01,2009.0
+Laos,2021-01-01,0.0
+Laos,2021-02-01,0.0
+Laos,2021-03-01,0.0
+Laos,2021-04-01,0.0
+Laos,2021-05-01,0.0
+Laos,2021-06-01,3.0
+Laos,2021-07-01,3.0
+Latvia,2021-01-01,644.0
+Latvia,2021-02-01,1202.0
+Latvia,2021-03-01,1621.0
+Latvia,2021-04-01,1913.0
+Latvia,2021-05-01,2139.0
+Latvia,2021-06-01,2379.0
+Latvia,2021-07-01,2520.0
+Lebanon,2021-01-01,1479.0
+Lebanon,2021-02-01,3145.0
+Lebanon,2021-03-01,4743.0
+Lebanon,2021-04-01,6286.0
+Lebanon,2021-05-01,7302.0
+Lebanon,2021-06-01,7735.0
+Lebanon,2021-07-01,7854.0
+Lesotho,2021-01-01,51.0
+Lesotho,2021-02-01,172.0
+Lesotho,2021-03-01,295.0
+Lesotho,2021-04-01,315.0
+Lesotho,2021-05-01,316.0
+Lesotho,2021-06-01,326.0
+Lesotho,2021-07-01,329.0
+Liberia,2021-01-01,83.0
+Liberia,2021-02-01,84.0
+Liberia,2021-03-01,85.0
+Liberia,2021-04-01,85.0
+Liberia,2021-05-01,85.0
+Liberia,2021-06-01,86.0
+Liberia,2021-07-01,129.0
+Libya,2021-01-01,1487.0
+Libya,2021-02-01,1883.0
+Libya,2021-03-01,2210.0
+Libya,2021-04-01,2680.0
+Libya,2021-05-01,3029.0
+Libya,2021-06-01,3127.0
+Libya,2021-07-01,3198.0
+Liechtenstein,2021-01-01,39.0
+Liechtenstein,2021-02-01,52.0
+Liechtenstein,2021-03-01,54.0
+Liechtenstein,2021-04-01,56.0
+Liechtenstein,2021-05-01,57.0
+Liechtenstein,2021-06-01,58.0
+Liechtenstein,2021-07-01,59.0
+Lithuania,2021-01-01,1837.0
+Lithuania,2021-02-01,2830.0
+Lithuania,2021-03-01,3253.0
+Lithuania,2021-04-01,3583.0
+Lithuania,2021-05-01,3937.0
+Lithuania,2021-06-01,4276.0
+Lithuania,2021-07-01,4384.0
+Luxembourg,2021-01-01,495.0
+Luxembourg,2021-02-01,584.0
+Luxembourg,2021-03-01,639.0
+Luxembourg,2021-04-01,749.0
+Luxembourg,2021-05-01,796.0
+Luxembourg,2021-06-01,817.0
+Luxembourg,2021-07-01,818.0
+MS Zaandam,2021-01-01,2.0
+MS Zaandam,2021-02-01,2.0
+MS Zaandam,2021-03-01,2.0
+MS Zaandam,2021-04-01,2.0
+MS Zaandam,2021-05-01,2.0
+MS Zaandam,2021-06-01,2.0
+MS Zaandam,2021-07-01,2.0
+Madagascar,2021-01-01,261.0
+Madagascar,2021-02-01,281.0
+Madagascar,2021-03-01,297.0
+Madagascar,2021-04-01,433.0
+Madagascar,2021-05-01,654.0
+Madagascar,2021-06-01,841.0
+Madagascar,2021-07-01,915.0
+Malawi,2021-01-01,191.0
+Malawi,2021-02-01,712.0
+Malawi,2021-03-01,1048.0
+Malawi,2021-04-01,1118.0
+Malawi,2021-05-01,1148.0
+Malawi,2021-06-01,1156.0
+Malawi,2021-07-01,1199.0
+Malaysia,2021-01-01,474.0
+Malaysia,2021-02-01,770.0
+Malaysia,2021-03-01,1135.0
+Malaysia,2021-04-01,1278.0
+Malaysia,2021-05-01,1521.0
+Malaysia,2021-06-01,2867.0
+Malaysia,2021-07-01,5254.0
+Maldives,2021-01-01,48.0
+Maldives,2021-02-01,52.0
+Maldives,2021-03-01,62.0
+Maldives,2021-04-01,67.0
+Maldives,2021-05-01,73.0
+Maldives,2021-06-01,169.0
+Maldives,2021-07-01,213.0
+Mali,2021-01-01,271.0
+Mali,2021-02-01,330.0
+Mali,2021-03-01,355.0
+Mali,2021-04-01,386.0
+Mali,2021-05-01,485.0
+Mali,2021-06-01,517.0
+Mali,2021-07-01,525.0
+Malta,2021-01-01,219.0
+Malta,2021-02-01,269.0
+Malta,2021-03-01,316.0
+Malta,2021-04-01,394.0
+Malta,2021-05-01,415.0
+Malta,2021-06-01,419.0
+Malta,2021-07-01,420.0
+Marshall Islands,2021-01-01,0.0
+Marshall Islands,2021-02-01,0.0
+Marshall Islands,2021-03-01,0.0
+Marshall Islands,2021-04-01,0.0
+Marshall Islands,2021-05-01,0.0
+Marshall Islands,2021-06-01,0.0
+Marshall Islands,2021-07-01,0.0
+Mauritania,2021-01-01,349.0
+Mauritania,2021-02-01,422.0
+Mauritania,2021-03-01,441.0
+Mauritania,2021-04-01,449.0
+Mauritania,2021-05-01,455.0
+Mauritania,2021-06-01,463.0
+Mauritania,2021-07-01,489.0
+Mauritius,2021-01-01,10.0
+Mauritius,2021-02-01,10.0
+Mauritius,2021-03-01,10.0
+Mauritius,2021-04-01,12.0
+Mauritius,2021-05-01,17.0
+Mauritius,2021-06-01,18.0
+Mauritius,2021-07-01,18.0
+Mexico,2021-01-01,126507.0
+Mexico,2021-02-01,159100.0
+Mexico,2021-03-01,186152.0
+Mexico,2021-04-01,203664.0
+Mexico,2021-05-01,217168.0
+Mexico,2021-06-01,227840.0
+Mexico,2021-07-01,233248.0
+Micronesia,2021-01-01,0.0
+Micronesia,2021-02-01,0.0
+Micronesia,2021-03-01,0.0
+Micronesia,2021-04-01,0.0
+Micronesia,2021-05-01,0.0
+Micronesia,2021-06-01,0.0
+Micronesia,2021-07-01,0.0
+Moldova,2021-01-01,3004.0
+Moldova,2021-02-01,3446.0
+Moldova,2021-03-01,3975.0
+Moldova,2021-04-01,5003.0
+Moldova,2021-05-01,5826.0
+Moldova,2021-06-01,6114.0
+Moldova,2021-07-01,6194.0
+Monaco,2021-01-01,3.0
+Monaco,2021-02-01,14.0
+Monaco,2021-03-01,24.0
+Monaco,2021-04-01,28.0
+Monaco,2021-05-01,32.0
+Monaco,2021-06-01,33.0
+Monaco,2021-07-01,33.0
+Mongolia,2021-01-01,1.0
+Mongolia,2021-02-01,2.0
+Mongolia,2021-03-01,2.0
+Mongolia,2021-04-01,8.0
+Mongolia,2021-05-01,115.0
+Mongolia,2021-06-01,286.0
+Mongolia,2021-07-01,592.0
+Montenegro,2021-01-01,684.0
+Montenegro,2021-02-01,811.0
+Montenegro,2021-03-01,1015.0
+Montenegro,2021-04-01,1286.0
+Montenegro,2021-05-01,1502.0
+Montenegro,2021-06-01,1585.0
+Montenegro,2021-07-01,1613.0
+Morocco,2021-01-01,7425.0
+Morocco,2021-02-01,8287.0
+Morocco,2021-03-01,8637.0
+Morocco,2021-04-01,8825.0
+Morocco,2021-05-01,9026.0
+Morocco,2021-06-01,9154.0
+Morocco,2021-07-01,9298.0
+Mozambique,2021-01-01,167.0
+Mozambique,2021-02-01,386.0
+Mozambique,2021-03-01,653.0
+Mozambique,2021-04-01,775.0
+Mozambique,2021-05-01,814.0
+Mozambique,2021-06-01,836.0
+Mozambique,2021-07-01,884.0
+Namibia,2021-01-01,208.0
+Namibia,2021-02-01,353.0
+Namibia,2021-03-01,428.0
+Namibia,2021-04-01,528.0
+Namibia,2021-05-01,643.0
+Namibia,2021-06-01,854.0
+Namibia,2021-07-01,1556.0
+Nepal,2021-01-01,1864.0
+Nepal,2021-02-01,2029.0
+Nepal,2021-03-01,2777.0
+Nepal,2021-04-01,3031.0
+Nepal,2021-05-01,3298.0
+Nepal,2021-06-01,7454.0
+Nepal,2021-07-01,9145.0
+Netherlands,2021-01-01,11624.0
+Netherlands,2021-02-01,14135.0
+Netherlands,2021-03-01,15710.0
+Netherlands,2021-04-01,16713.0
+Netherlands,2021-05-01,17421.0
+Netherlands,2021-06-01,17906.0
+Netherlands,2021-07-01,18031.0
+New Zealand,2021-01-01,25.0
+New Zealand,2021-02-01,25.0
+New Zealand,2021-03-01,26.0
+New Zealand,2021-04-01,26.0
+New Zealand,2021-05-01,26.0
+New Zealand,2021-06-01,26.0
+New Zealand,2021-07-01,26.0
+Nicaragua,2021-01-01,165.0
+Nicaragua,2021-02-01,169.0
+Nicaragua,2021-03-01,173.0
+Nicaragua,2021-04-01,178.0
+Nicaragua,2021-05-01,182.0
+Nicaragua,2021-06-01,187.0
+Nicaragua,2021-07-01,191.0
+Niger,2021-01-01,106.0
+Niger,2021-02-01,161.0
+Niger,2021-03-01,172.0
+Niger,2021-04-01,187.0
+Niger,2021-05-01,191.0
+Niger,2021-06-01,192.0
+Niger,2021-07-01,193.0
+Nigeria,2021-01-01,1294.0
+Nigeria,2021-02-01,1607.0
+Nigeria,2021-03-01,1915.0
+Nigeria,2021-04-01,2058.0
+Nigeria,2021-05-01,2063.0
+Nigeria,2021-06-01,2099.0
+Nigeria,2021-07-01,2121.0
+North Macedonia,2021-01-01,2510.0
+North Macedonia,2021-02-01,2866.0
+North Macedonia,2021-03-01,3144.0
+North Macedonia,2021-04-01,3810.0
+North Macedonia,2021-05-01,4891.0
+North Macedonia,2021-06-01,5423.0
+North Macedonia,2021-07-01,5485.0
+Norway,2021-01-01,436.0
+Norway,2021-02-01,567.0
+Norway,2021-03-01,623.0
+Norway,2021-04-01,673.0
+Norway,2021-05-01,756.0
+Norway,2021-06-01,783.0
+Norway,2021-07-01,794.0
+Oman,2021-01-01,1499.0
+Oman,2021-02-01,1532.0
+Oman,2021-03-01,1577.0
+Oman,2021-04-01,1681.0
+Oman,2021-05-01,2010.0
+Oman,2021-06-01,2356.0
+Oman,2021-07-01,3140.0
+Pakistan,2021-01-01,10258.0
+Pakistan,2021-02-01,11746.0
+Pakistan,2021-03-01,12938.0
+Pakistan,2021-04-01,14613.0
+Pakistan,2021-05-01,18070.0
+Pakistan,2021-06-01,20930.0
+Pakistan,2021-07-01,22345.0
+Palau,2021-01-01,0.0
+Palau,2021-02-01,0.0
+Palau,2021-03-01,0.0
+Palau,2021-04-01,0.0
+Palau,2021-05-01,0.0
+Palau,2021-06-01,0.0
+Palau,2021-07-01,0.0
+Panama,2021-01-01,4064.0
+Panama,2021-02-01,5296.0
+Panama,2021-03-01,5858.0
+Panama,2021-04-01,6119.0
+Panama,2021-05-01,6235.0
+Panama,2021-06-01,6377.0
+Panama,2021-07-01,6552.0
+Papua New Guinea,2021-01-01,9.0
+Papua New Guinea,2021-02-01,9.0
+Papua New Guinea,2021-03-01,14.0
+Papua New Guinea,2021-04-01,60.0
+Papua New Guinea,2021-05-01,115.0
+Papua New Guinea,2021-06-01,162.0
+Papua New Guinea,2021-07-01,173.0
+Paraguay,2021-01-01,2262.0
+Paraguay,2021-02-01,2733.0
+Paraguay,2021-03-01,3198.0
+Paraguay,2021-04-01,4250.0
+Paraguay,2021-05-01,6476.0
+Paraguay,2021-06-01,9293.0
+Paraguay,2021-07-01,13017.0
+Peru,2021-01-01,93231.0
+Peru,2021-02-01,104271.0
+Peru,2021-03-01,123365.0
+Peru,2021-04-01,144106.0
+Peru,2021-05-01,167398.0
+Peru,2021-06-01,184021.0
+Peru,2021-07-01,192687.0
+Philippines,2021-01-01,9248.0
+Philippines,2021-02-01,10807.0
+Philippines,2021-03-01,12322.0
+Philippines,2021-04-01,13303.0
+Philippines,2021-05-01,17354.0
+Philippines,2021-06-01,21012.0
+Philippines,2021-07-01,24797.0
+Poland,2021-01-01,28956.0
+Poland,2021-02-01,37222.0
+Poland,2021-03-01,43793.0
+Poland,2021-04-01,53665.0
+Poland,2021-05-01,67924.0
+Poland,2021-06-01,73856.0
+Poland,2021-07-01,75044.0
+Portugal,2021-01-01,6972.0
+Portugal,2021-02-01,12757.0
+Portugal,2021-03-01,16351.0
+Portugal,2021-04-01,16859.0
+Portugal,2021-05-01,16976.0
+Portugal,2021-06-01,17025.0
+Portugal,2021-07-01,17101.0
+Qatar,2021-01-01,245.0
+Qatar,2021-02-01,249.0
+Qatar,2021-03-01,259.0
+Qatar,2021-04-01,295.0
+Qatar,2021-05-01,465.0
+Qatar,2021-06-01,560.0
+Qatar,2021-07-01,591.0
+Romania,2021-01-01,15841.0
+Romania,2021-02-01,18402.0
+Romania,2021-03-01,20403.0
+Romania,2021-04-01,23674.0
+Romania,2021-05-01,28194.0
+Romania,2021-06-01,30353.0
+Romania,2021-07-01,33861.0
+Russia,2021-01-01,56798.0
+Russia,2021-02-01,72456.0
+Russia,2021-03-01,85025.0
+Russia,2021-04-01,97594.0
+Russia,2021-05-01,108675.0
+Russia,2021-06-01,119830.0
+Russia,2021-07-01,133633.0
+Rwanda,2021-01-01,94.0
+Rwanda,2021-02-01,198.0
+Rwanda,2021-03-01,264.0
+Rwanda,2021-04-01,308.0
+Rwanda,2021-05-01,335.0
+Rwanda,2021-06-01,357.0
+Rwanda,2021-07-01,448.0
+Saint Kitts and Nevis,2021-01-01,0.0
+Saint Kitts and Nevis,2021-02-01,0.0
+Saint Kitts and Nevis,2021-03-01,0.0
+Saint Kitts and Nevis,2021-04-01,0.0
+Saint Kitts and Nevis,2021-05-01,0.0
+Saint Kitts and Nevis,2021-06-01,0.0
+Saint Kitts and Nevis,2021-07-01,3.0
+Saint Lucia,2021-01-01,5.0
+Saint Lucia,2021-02-01,15.0
+Saint Lucia,2021-03-01,36.0
+Saint Lucia,2021-04-01,61.0
+Saint Lucia,2021-05-01,74.0
+Saint Lucia,2021-06-01,79.0
+Saint Lucia,2021-07-01,84.0
+Saint Vincent and the Grenadines,2021-01-01,0.0
+Saint Vincent and the Grenadines,2021-02-01,2.0
+Saint Vincent and the Grenadines,2021-03-01,8.0
+Saint Vincent and the Grenadines,2021-04-01,10.0
+Saint Vincent and the Grenadines,2021-05-01,11.0
+Saint Vincent and the Grenadines,2021-06-01,12.0
+Saint Vincent and the Grenadines,2021-07-01,12.0
+Samoa,2021-01-01,0.0
+Samoa,2021-02-01,0.0
+Samoa,2021-03-01,0.0
+Samoa,2021-04-01,0.0
+Samoa,2021-05-01,0.0
+Samoa,2021-06-01,0.0
+Samoa,2021-07-01,0.0
+San Marino,2021-01-01,59.0
+San Marino,2021-02-01,67.0
+San Marino,2021-03-01,74.0
+San Marino,2021-04-01,84.0
+San Marino,2021-05-01,90.0
+San Marino,2021-06-01,90.0
+San Marino,2021-07-01,90.0
+Sao Tome and Principe,2021-01-01,17.0
+Sao Tome and Principe,2021-02-01,17.0
+Sao Tome and Principe,2021-03-01,30.0
+Sao Tome and Principe,2021-04-01,34.0
+Sao Tome and Principe,2021-05-01,35.0
+Sao Tome and Principe,2021-06-01,41.0
+Sao Tome and Principe,2021-07-01,37.0
+Saudi Arabia,2021-01-01,6230.0
+Saudi Arabia,2021-02-01,6379.0
+Saudi Arabia,2021-03-01,6500.0
+Saudi Arabia,2021-04-01,6676.0
+Saudi Arabia,2021-05-01,6968.0
+Saudi Arabia,2021-06-01,7377.0
+Saudi Arabia,2021-07-01,7804.0
+Senegal,2021-01-01,410.0
+Senegal,2021-02-01,638.0
+Senegal,2021-03-01,880.0
+Senegal,2021-04-01,1054.0
+Senegal,2021-05-01,1109.0
+Senegal,2021-06-01,1140.0
+Senegal,2021-07-01,1168.0
+Serbia,2021-01-01,3250.0
+Serbia,2021-02-01,4038.0
+Serbia,2021-03-01,4459.0
+Serbia,2021-04-01,5345.0
+Serbia,2021-05-01,6386.0
+Serbia,2021-06-01,6872.0
+Serbia,2021-07-01,7047.0
+Seychelles,2021-01-01,0.0
+Seychelles,2021-02-01,5.0
+Seychelles,2021-03-01,11.0
+Seychelles,2021-04-01,22.0
+Seychelles,2021-05-01,28.0
+Seychelles,2021-06-01,42.0
+Seychelles,2021-07-01,68.0
+Sierra Leone,2021-01-01,76.0
+Sierra Leone,2021-02-01,79.0
+Sierra Leone,2021-03-01,79.0
+Sierra Leone,2021-04-01,79.0
+Sierra Leone,2021-05-01,79.0
+Sierra Leone,2021-06-01,79.0
+Sierra Leone,2021-07-01,102.0
+Singapore,2021-01-01,29.0
+Singapore,2021-02-01,29.0
+Singapore,2021-03-01,29.0
+Singapore,2021-04-01,30.0
+Singapore,2021-05-01,31.0
+Singapore,2021-06-01,33.0
+Singapore,2021-07-01,36.0
+Slovakia,2021-01-01,2250.0
+Slovakia,2021-02-01,4711.0
+Slovakia,2021-03-01,7270.0
+Slovakia,2021-04-01,9790.0
+Slovakia,2021-05-01,11732.0
+Slovakia,2021-06-01,12353.0
+Slovakia,2021-07-01,12511.0
+Slovenia,2021-01-01,2728.0
+Slovenia,2021-02-01,3522.0
+Slovenia,2021-03-01,3854.0
+Slovenia,2021-04-01,4054.0
+Slovenia,2021-05-01,4258.0
+Slovenia,2021-06-01,4376.0
+Slovenia,2021-07-01,4419.0
+Solomon Islands,2021-01-01,0.0
+Solomon Islands,2021-02-01,0.0
+Solomon Islands,2021-03-01,0.0
+Solomon Islands,2021-04-01,0.0
+Solomon Islands,2021-05-01,0.0
+Solomon Islands,2021-06-01,0.0
+Solomon Islands,2021-07-01,0.0
+Somalia,2021-01-01,130.0
+Somalia,2021-02-01,130.0
+Somalia,2021-03-01,243.0
+Somalia,2021-04-01,537.0
+Somalia,2021-05-01,713.0
+Somalia,2021-06-01,769.0
+Somalia,2021-07-01,775.0
+South Africa,2021-01-01,28887.0
+South Africa,2021-02-01,44399.0
+South Africa,2021-03-01,50077.0
+South Africa,2021-04-01,52897.0
+South Africa,2021-05-01,54406.0
+South Africa,2021-06-01,56601.0
+South Africa,2021-07-01,61029.0
+South Sudan,2021-01-01,63.0
+South Sudan,2021-02-01,64.0
+South Sudan,2021-03-01,94.0
+South Sudan,2021-04-01,112.0
+South Sudan,2021-05-01,115.0
+South Sudan,2021-06-01,115.0
+South Sudan,2021-07-01,117.0
+Spain,2021-01-01,50837.0
+Spain,2021-02-01,59081.0
+Spain,2021-03-01,69609.0
+Spain,2021-04-01,75541.0
+Spain,2021-05-01,78216.0
+Spain,2021-06-01,79983.0
+Spain,2021-07-01,80883.0
+Sri Lanka,2021-01-01,208.0
+Sri Lanka,2021-02-01,323.0
+Sri Lanka,2021-03-01,476.0
+Sri Lanka,2021-04-01,571.0
+Sri Lanka,2021-05-01,687.0
+Sri Lanka,2021-06-01,1484.0
+Sri Lanka,2021-07-01,3120.0
+Sudan,2021-01-01,1468.0
+Sudan,2021-02-01,1812.0
+Sudan,2021-03-01,1890.0
+Sudan,2021-04-01,2063.0
+Sudan,2021-05-01,2349.0
+Sudan,2021-06-01,2662.0
+Sudan,2021-07-01,2760.0
+Summer Olympics 2020,2021-01-01,0.0
+Summer Olympics 2020,2021-02-01,0.0
+Summer Olympics 2020,2021-03-01,0.0
+Summer Olympics 2020,2021-04-01,0.0
+Summer Olympics 2020,2021-05-01,0.0
+Summer Olympics 2020,2021-06-01,0.0
+Summer Olympics 2020,2021-07-01,0.0
+Suriname,2021-01-01,123.0
+Suriname,2021-02-01,156.0
+Suriname,2021-03-01,173.0
+Suriname,2021-04-01,177.0
+Suriname,2021-05-01,204.0
+Suriname,2021-06-01,313.0
+Suriname,2021-07-01,531.0
+Sweden,2021-01-01,8727.0
+Sweden,2021-02-01,11591.0
+Sweden,2021-03-01,12826.0
+Sweden,2021-04-01,13498.0
+Sweden,2021-05-01,14048.0
+Sweden,2021-06-01,14451.0
+Sweden,2021-07-01,14630.0
+Switzerland,2021-01-01,7704.0
+Switzerland,2021-02-01,9452.0
+Switzerland,2021-03-01,9988.0
+Switzerland,2021-04-01,10350.0
+Switzerland,2021-05-01,10633.0
+Switzerland,2021-06-01,10826.0
+Switzerland,2021-07-01,10894.0
+Syria,2021-01-01,717.0
+Syria,2021-02-01,926.0
+Syria,2021-03-01,1032.0
+Syria,2021-04-01,1274.0
+Syria,2021-05-01,1598.0
+Syria,2021-06-01,1774.0
+Syria,2021-07-01,1879.0
+Taiwan*,2021-01-01,7.0
+Taiwan*,2021-02-01,8.0
+Taiwan*,2021-03-01,9.0
+Taiwan*,2021-04-01,10.0
+Taiwan*,2021-05-01,12.0
+Taiwan*,2021-06-01,137.0
+Taiwan*,2021-07-01,661.0
+Tajikistan,2021-01-01,90.0
+Tajikistan,2021-02-01,90.0
+Tajikistan,2021-03-01,90.0
+Tajikistan,2021-04-01,90.0
+Tajikistan,2021-05-01,90.0
+Tajikistan,2021-06-01,90.0
+Tajikistan,2021-07-01,90.0
+Tanzania,2021-01-01,21.0
+Tanzania,2021-02-01,21.0
+Tanzania,2021-03-01,21.0
+Tanzania,2021-04-01,21.0
+Tanzania,2021-05-01,21.0
+Tanzania,2021-06-01,21.0
+Tanzania,2021-07-01,21.0
+Thailand,2021-01-01,64.0
+Thailand,2021-02-01,79.0
+Thailand,2021-03-01,83.0
+Thailand,2021-04-01,94.0
+Thailand,2021-05-01,224.0
+Thailand,2021-06-01,1069.0
+Thailand,2021-07-01,2080.0
+Timor-Leste,2021-01-01,0.0
+Timor-Leste,2021-02-01,0.0
+Timor-Leste,2021-03-01,0.0
+Timor-Leste,2021-04-01,0.0
+Timor-Leste,2021-05-01,3.0
+Timor-Leste,2021-06-01,16.0
+Timor-Leste,2021-07-01,24.0
+Togo,2021-01-01,68.0
+Togo,2021-02-01,79.0
+Togo,2021-03-01,85.0
+Togo,2021-04-01,110.0
+Togo,2021-05-01,123.0
+Togo,2021-06-01,125.0
+Togo,2021-07-01,130.0
+Trinidad and Tobago,2021-01-01,127.0
+Trinidad and Tobago,2021-02-01,134.0
+Trinidad and Tobago,2021-03-01,139.0
+Trinidad and Tobago,2021-04-01,145.0
+Trinidad and Tobago,2021-05-01,171.0
+Trinidad and Tobago,2021-06-01,507.0
+Trinidad and Tobago,2021-07-01,857.0
+Tunisia,2021-01-01,4730.0
+Tunisia,2021-02-01,6802.0
+Tunisia,2021-03-01,8022.0
+Tunisia,2021-04-01,8843.0
+Tunisia,2021-05-01,10808.0
+Tunisia,2021-06-01,12720.0
+Tunisia,2021-07-01,15065.0
+Turkey,2021-01-01,21093.0
+Turkey,2021-02-01,26117.0
+Turkey,2021-03-01,28638.0
+Turkey,2021-04-01,31713.0
+Turkey,2021-05-01,40504.0
+Turkey,2021-06-01,47656.0
+Turkey,2021-07-01,49774.0
+US,2021-01-01,354115.0
+US,2021-02-01,451241.0
+US,2021-03-01,516291.0
+US,2021-04-01,553355.0
+US,2021-05-01,576776.0
+US,2021-06-01,594869.0
+US,2021-07-01,604832.0
+Uganda,2021-01-01,265.0
+Uganda,2021-02-01,325.0
+Uganda,2021-03-01,334.0
+Uganda,2021-04-01,335.0
+Uganda,2021-05-01,342.0
+Uganda,2021-06-01,362.0
+Uganda,2021-07-01,1061.0
+Ukraine,2021-01-01,19437.0
+Ukraine,2021-02-01,23931.0
+Ukraine,2021-03-01,27480.0
+Ukraine,2021-04-01,34885.0
+Ukraine,2021-05-01,46281.0
+Ukraine,2021-06-01,52742.0
+Ukraine,2021-07-01,54644.0
+United Arab Emirates,2021-01-01,671.0
+United Arab Emirates,2021-02-01,859.0
+United Arab Emirates,2021-03-01,1238.0
+United Arab Emirates,2021-04-01,1499.0
+United Arab Emirates,2021-05-01,1591.0
+United Arab Emirates,2021-06-01,1684.0
+United Arab Emirates,2021-07-01,1819.0
+United Kingdom,2021-01-01,74237.0
+United Kingdom,2021-02-01,106774.0
+United Kingdom,2021-03-01,123187.0
+United Kingdom,2021-04-01,127006.0
+United Kingdom,2021-05-01,127782.0
+United Kingdom,2021-06-01,128045.0
+United Kingdom,2021-07-01,128426.0
+Uruguay,2021-01-01,193.0
+Uruguay,2021-02-01,444.0
+Uruguay,2021-03-01,611.0
+Uruguay,2021-04-01,1009.0
+Uruguay,2021-05-01,2669.0
+Uruguay,2021-06-01,4342.0
+Uruguay,2021-07-01,5619.0
+Uzbekistan,2021-01-01,614.0
+Uzbekistan,2021-02-01,621.0
+Uzbekistan,2021-03-01,622.0
+Uzbekistan,2021-04-01,630.0
+Uzbekistan,2021-05-01,650.0
+Uzbekistan,2021-06-01,690.0
+Uzbekistan,2021-07-01,740.0
+Vanuatu,2021-01-01,0.0
+Vanuatu,2021-02-01,0.0
+Vanuatu,2021-03-01,0.0
+Vanuatu,2021-04-01,0.0
+Vanuatu,2021-05-01,1.0
+Vanuatu,2021-06-01,1.0
+Vanuatu,2021-07-01,1.0
+Venezuela,2021-01-01,1030.0
+Venezuela,2021-02-01,1196.0
+Venezuela,2021-03-01,1348.0
+Venezuela,2021-04-01,1615.0
+Venezuela,2021-05-01,2155.0
+Venezuela,2021-06-01,2661.0
+Venezuela,2021-07-01,3136.0
+Vietnam,2021-01-01,35.0
+Vietnam,2021-02-01,35.0
+Vietnam,2021-03-01,35.0
+Vietnam,2021-04-01,35.0
+Vietnam,2021-05-01,35.0
+Vietnam,2021-06-01,48.0
+Vietnam,2021-07-01,81.0
+West Bank and Gaza,2021-01-01,1418.0
+West Bank and Gaza,2021-02-01,1840.0
+West Bank and Gaza,2021-03-01,2058.0
+West Bank and Gaza,2021-04-01,2645.0
+West Bank and Gaza,2021-05-01,3249.0
+West Bank and Gaza,2021-06-01,3503.0
+West Bank and Gaza,2021-07-01,3565.0
+Yemen,2021-01-01,610.0
+Yemen,2021-02-01,615.0
+Yemen,2021-03-01,634.0
+Yemen,2021-04-01,906.0
+Yemen,2021-05-01,1229.0
+Yemen,2021-06-01,1322.0
+Yemen,2021-07-01,1361.0
+Zambia,2021-01-01,390.0
+Zambia,2021-02-01,780.0
+Zambia,2021-03-01,1098.0
+Zambia,2021-04-01,1212.0
+Zambia,2021-05-01,1251.0
+Zambia,2021-06-01,1282.0
+Zambia,2021-07-01,2271.0
+Zimbabwe,2021-01-01,369.0
+Zimbabwe,2021-02-01,1234.0
+Zimbabwe,2021-03-01,1468.0
+Zimbabwe,2021-04-01,1523.0
+Zimbabwe,2021-05-01,1568.0
+Zimbabwe,2021-06-01,1599.0
+Zimbabwe,2021-07-01,1808.0
