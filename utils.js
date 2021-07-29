@@ -41,6 +41,8 @@ function populate_country(data) {
 function initialize_chart(data) {
 
     selected_country = "US"
+    line_color = "blue"
+
     country_data = data.filter(function(d) { return d.country == selected_country;})
 
     // CONSTRUCT GRAPH CONTAINER
@@ -99,10 +101,10 @@ function initialize_chart(data) {
         .x((d, i) => xScale(dates[i]))
         .y((d) => yScale(d));
 
-    svg
+    svg.append("g")
         .append("path")
         .attr("fill", "none")
-        .attr("stroke", "blue")
+        .attr("stroke", line_color)
         .attr("stroke-width", 1.5)
         .attr("class", "line")
         .attr("d", line(cases));
