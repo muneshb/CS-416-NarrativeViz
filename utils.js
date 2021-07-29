@@ -97,12 +97,12 @@ function initialize_chart(data) {
     let line = d3
         .line()
         .x((d, i) => xScale(dates[i]))
-        .y((d, i) => yScale(d));
+        .y((d) => yScale(d));
 
     svg
         .append("path")
         .attr("fill", "none")
-        // .attr("stroke", data.series[0].color)
+        .attr("stroke", "blue")
         .attr("stroke-width", 1.5)
         .attr("class", "line")
         .attr("d", line(cases));
