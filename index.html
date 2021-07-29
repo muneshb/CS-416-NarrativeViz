@@ -51,21 +51,16 @@
 
 <script>
     async function init() {
+        data = await d3.csv("time_series_covid19_confirmed_global.csv")
 
-        d3.csv("time_series_covid19_confirmed_global.csv", function(data) {
-                // List of groups (here I have one group per column)
-                var allGroup = d3.map(data, function(d){return d.country;}).keys();
-                console.log(allGroup);
-                // add the options to the button
-                d3.select("#country")
-                    .selectAll('myOptions')
-                    .data(allGroup)
-                    .enter()
-                    .append('option')
-                    .text(function (d) { return d; }) // text showed in the menu
-                    .attr("value", function (d) { return d; }) // corresponding value returned by the button
-            }
-        );
+        // add the options to the button
+        d3.select("#country")
+            .selectAll('myOptions')
+            .data(data)
+            .enter()
+            .append('option')
+            .text(function (d) { return d.country; }) // text in the menu
+            .attr("value", function (d) { return d.country; }) // corresponding value by the action
     }
 </script>
 </body>
