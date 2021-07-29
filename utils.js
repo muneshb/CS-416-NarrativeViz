@@ -1,32 +1,13 @@
-function populateCasesByState(d) {
-  if (d.state === "Illinois") {
-    ilCases.push(+d.cases);
-    dates.add(dateParser(d.date));
-  }
-  if (d.state === "New York") {
-    nyCases.push(+d.cases);
-  }
-  if (d.state === "California") {
-    caliCases.push(+d.cases);
-  }
-}
 
-function zeroPadArrays(caliCases, nyCases) {
-  caliCases.unshift(0);
-  for (let i = 0; i < 191 - 154; i++) {
-    nyCases.unshift(0);
-  }
-}
-
-async function init(file) {
+async function init(file, color) {
     data = await d3.csv(file)
 
-    populate_country(data)
+    populateCountry(data)
 
-    initialize_chart(data, "US")
+    initializeChart(data, "US", color)
 }
 
-function populate_country(data) {
+function populateCountry(data) {
     let options = [...new Set(data.map(d => d.country))];
     // add the options to the button
     d3.select("#country")
@@ -38,28 +19,25 @@ function populate_country(data) {
         .attr("value", function (d) { return d; }) // corresponding value by the action
 }
 
-function update_chart(lineChartComp, line, data, selectedCountry) {
+function updateChart(lineChartComp, line, data, selectedCountry) {
 
-    country_data = data.filter(function(d) { return d.country == selectedCountry;})
+    countryData = data.filter(function(d) { return d.country == selectedCountry;})
 
-    let cases = [...country_data.map(d => d.cases)];
+    let cases = [...countryData.map(d => d.cases)];
 
     lineChartComp.transition()
         .duration(1000)
         .attr("d", line(cases));
 }
 
-function initialize_chart(data, selectedCountry) {
+function initializeChart(data, selectedCountry, lineColor) {
 
-    // selected_country = "US"
-    line_color = "blue"
-
-    country_data = data.filter(function(d) { return d.country == selectedCountry;})
+    countryData = data.filter(function(d) { return d.country == selectedCountry;})
 
     // CONSTRUCT GRAPH CONTAINER
     const margin = { top: 80, right: 150, bottom: 60, left: 100 };
-    const width = 700 - margin.left - margin.right;
-    const height = 500 - margin.top - margin.bottom;
+    const width = 1000 - margin.left - margin.right;
+    const height = 800 - margin.top - margin.bottom;
 
     let svg = d3
         .select("#container")
@@ -73,8 +51,8 @@ function initialize_chart(data, selectedCountry) {
 
     const dateParser = d3.timeParse("%Y-%m-%d");
 
-    let dates = [...country_data.map(d => dateParser(d.date))];
-    let cases = [...country_data.map(d => d.cases)];
+    let dates = [...countryData.map(d => dateParser(d.date))];
+    let cases = [...countryData.map(d => d.cases)];
 
     const xScale = d3
         .scaleTime()
@@ -115,8 +93,8 @@ function initialize_chart(data, selectedCountry) {
     lineChartComp = svg.append("g")
         .append("path")
         .attr("fill", "none")
-        .attr("stroke", line_color)
-        .attr("stroke-width", 1.5)
+        .attr("stroke", lineColor)
+        .attr("stroke-width", 2)
         .attr("class", "line")
         .attr("d", line(cases));
 
@@ -125,6 +103,6 @@ function initialize_chart(data, selectedCountry) {
         // recover the option that has been chosen
         var selectedOption = d3.select(this).property("value")
         // run the updateChart function with this selected option
-        update_chart(lineChartComp, line, data, selectedOption)
+        updateChart(lineChartComp, line, data, selectedOption)
     })
 }
