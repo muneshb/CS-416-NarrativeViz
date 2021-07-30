@@ -26,7 +26,7 @@ function populateCountry(data) {
         .attr("value", function (d) { return d; }) // corresponding value by the action
 }
 
-function updateChart(lineChartComp, line, data, selectedCountry, makeAnnotations, annotations) {
+function updateChart(lineChartComp, line, data, selectedCountry, makeAnnotations, annotations, xScale, yScale) {
 
     countryData = data.filter(function(d) { return d.country == selectedCountry;})
 
@@ -38,20 +38,68 @@ function updateChart(lineChartComp, line, data, selectedCountry, makeAnnotations
 
     last_state = cases[cases.length -1]
 
-    d3.select('.annotation-group')
-        .transition()
-        .duration(1000)
-        .tween('updateAnno',function(d){
-            xTrans = '2021-07-01'
-            yTrans = last_state
-            return function(t){
-                annotations[0].x = '2021-07-01';
-                annotations[0].y = last_state;
-                annotations[0].note.label = '2021-07-01, ' + last_state
-                makeAnnotations.annotations(annotations)
-                makeAnnotations.update()
-            }
+    d3.select('.annotation-group').html = ''
+    setAnnotation(cases, xScale, yScale)
+        // .transition()
+        // .duration(1000)
+        // .tween('updateAnno',function(d){
+        //     xTrans = '2021-07-01'
+        //     yTrans = last_state
+        //     return function(t){
+        //         annotations[0].x = '2021-07-01';
+        //         annotations[0].y = last_state;
+        //         annotations[0].note.label = '2021-07-01'
+        //         makeAnnotations.annotations(annotations)
+        //         makeAnnotations.update()
+        //     }
+        // })
+}
+
+function setAnnotation(cases, xScale, yScale) {
+    // Construct Annotation
+
+    last_state = cases[cases.length -1]
+
+    const labels = [
+        {
+            note: {
+                label: "2021-07-01",
+                title: "Current state",
+            },
+            dy: -5,
+            dx: 50,
+            data: {
+                x: "2021-07-01",
+                y: last_state,
+            },
+            subject: { radius: 8 },
+        },
+    ];
+
+    const makeAnnotations = d3
+        .annotation()
+        .annotations(labels)
+        .type(d3.annotationCalloutCircle)
+        .accessors({
+            x: (d) => xScale(dateParser(d.x)),
+            y: (d) => yScale(d.y),
         })
+        .on("subjectover", function (annotation) {
+            annotation.type.a
+                .selectAll("g.annotation-connector, g.annotation-note")
+                .classed("hidden", false);
+        })
+        .on("subjectout", function (annotation) {
+            annotation.type.a
+                .selectAll("g.annotation-connector, g.annotation-note")
+                .classed("hidden", true);
+        });
+
+    svg.append("g").attr("class", "annotation-group").call(makeAnnotations);
+
+    svg
+        .selectAll("g.annotation-connector, g.annotation-note")
+        .classed("hidden", true);
 }
 
 function initializeChart(data, selectedCountry, lineColor) {
@@ -217,58 +265,13 @@ function initializeChart(data, selectedCountry, lineColor) {
         });
 
 
-    // CONSTRUCT ANNOTATION
-
-    last_state = cases[cases.length -1]
-
-    const labels = [
-        {
-            note: {
-                label: "2021-07-01, " + last_state,
-                title: "Current state",
-            },
-            dy: -5,
-            dx: 50,
-            data: {
-                x: "2021-07-01",
-                y: last_state,
-            },
-            subject: { radius: 8 },
-        },
-    ];
-
-    const makeAnnotations = d3
-        .annotation()
-        .annotations(labels)
-        .type(d3.annotationCalloutCircle)
-        .accessors({
-            x: (d) => xScale(dateParser(d.x)),
-            y: (d) => yScale(d.y),
-        })
-        .on("subjectover", function (annotation) {
-            annotation.type.a
-                .selectAll("g.annotation-connector, g.annotation-note")
-                .classed("hidden", false);
-        })
-        .on("subjectout", function (annotation) {
-            annotation.type.a
-                .selectAll("g.annotation-connector, g.annotation-note")
-                .classed("hidden", true);
-        });
-
-    svg.append("g").attr("class", "annotation-group").call(makeAnnotations);
-
-    svg
-        .selectAll("g.annotation-connector, g.annotation-note")
-        .classed("hidden", true);
-
-
+    setAnnotation(cases, xScale, yScale)
 
     // When the button is changed, run the updateChart function
     d3.select("#country").on("change", function(d) {
         // recover the option that has been chosen
         var selectedOption = d3.select(this).property("value")
         // run the updateChart function with this selected option
-        updateChart(lineChartComp, line, data, selectedOption, makeAnnotations, labels)
+        updateChart(lineChartComp, line, data, selectedOption, makeAnnotations, labels, xScale, yScale)
     })
 }
