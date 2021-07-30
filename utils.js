@@ -26,7 +26,7 @@ function populateCountry(data) {
         .attr("value", function (d) { return d; }) // corresponding value by the action
 }
 
-function updateChart(lineChartComp, line, data, selectedCountry) {
+function updateChart(lineChartComp, line, data, selectedCountry, makeAnnotations, annotations) {
 
     countryData = data.filter(function(d) { return d.country == selectedCountry;})
 
@@ -123,14 +123,6 @@ function initializeChart(data, selectedCountry, lineColor) {
         .attr("stroke-width", 2)
         .attr("class", "line")
         .attr("d", line(cases));
-
-    // When the button is changed, run the updateChart function
-    d3.select("#country").on("change", function(d) {
-        // recover the option that has been chosen
-        var selectedOption = d3.select(this).property("value")
-        // run the updateChart function with this selected option
-        updateChart(lineChartComp, line, data, selectedOption)
-    })
 
     // Tooltip
     var mouseG = svg.append("g").attr("class", "mouse-over-effects");
@@ -268,4 +260,14 @@ function initializeChart(data, selectedCountry, lineColor) {
     svg
         .selectAll("g.annotation-connector, g.annotation-note")
         .classed("hidden", true);
+
+
+
+    // When the button is changed, run the updateChart function
+    d3.select("#country").on("change", function(d) {
+        // recover the option that has been chosen
+        var selectedOption = d3.select(this).property("value")
+        // run the updateChart function with this selected option
+        updateChart(lineChartComp, line, data, selectedOption, makeAnnotations, labels)
+    })
 }
