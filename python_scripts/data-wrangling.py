@@ -13,7 +13,7 @@ def transform(file_name):
 
 	piv_df['date'] = pd.to_datetime(piv_df['date'],format='%m/%d/%y')
 
-	refined_df = piv_df.where((piv_df.date >= "2021-01-01") & (piv_df.date.dt.day == 1)).dropna()
+	refined_df = piv_df.where((piv_df.date >= "2020-01-01") & (piv_df.date.dt.day == 1)).dropna()
 	result_df = refined_df.groupby(['country', 'date']).sum()
 
 	result_df.to_csv("./../data/" + file_name)
