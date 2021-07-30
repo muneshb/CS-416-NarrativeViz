@@ -206,4 +206,60 @@ function initializeChart(data, selectedCountry, lineColor) {
                 return "translate(" + mouse[0] + "," + pos.y + ")";
             });
         });
+
+
+    // CONSTRUCT ANNOTATION
+    const labels = [
+        {
+            note: {
+                label: "2021-07-01",
+                title: "Stay at home begins",
+            },
+            dy: -5,
+            dx: 50,
+            data: {
+                x: "2021-07-01",
+                y: 15188,
+            },
+            subject: { radius: 5 },
+        },
+        {
+            note: {
+                label: "2020-05-15",
+                title: "Stay at home ends",
+            },
+            dy: 0,
+            dx: 50,
+            data: {
+                x: "2020-05-15",
+                y: 350951,
+            },
+            subject: { radius: 5 },
+        },
+    ];
+
+    const makeAnnotations = d3
+        .annotation()
+        .annotations(labels)
+        .type(d3.annotationCalloutCircle)
+        .accessors({
+            x: (d) => xScale(dateParser(d.x)),
+            y: (d) => yScale(d.y),
+        })
+        .on("subjectover", function (annotation) {
+            annotation.type.a
+                .selectAll("g.annotation-connector, g.annotation-note")
+                .classed("hidden", false);
+        })
+        .on("subjectout", function (annotation) {
+            annotation.type.a
+                .selectAll("g.annotation-connector, g.annotation-note")
+                .classed("hidden", true);
+        });
+
+    svg.append("g").attr("class", "annotation-test").call(makeAnnotations);
+
+    svg
+        .selectAll("g.annotation-connector, g.annotation-note")
+        .classed("hidden", true);
 }
