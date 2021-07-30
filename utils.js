@@ -38,7 +38,7 @@ function updateChart(svg, lineChartComp, line, data, selectedCountry, xScale, yS
 
     last_state = cases[cases.length -1]
 
-    d3.select('.annotation-group').html = ''
+    d3.select('.annotation-group').remove()
     setAnnotation(svg, cases, xScale, yScale, dateParser)
         // .transition()
         // .duration(1000)
