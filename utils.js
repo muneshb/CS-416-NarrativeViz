@@ -170,7 +170,7 @@ function initializeChart(data, selectedCountry, lineColor) {
             });
 
             d3.selectAll(".mouse-per-line").attr("transform", function (d, i) {
-                console.log(d);
+
                 var xDate = xScale.invert(mouse[0]),
                     bisect = d3.bisector(function (d) {
                         return d.date;
@@ -178,7 +178,7 @@ function initializeChart(data, selectedCountry, lineColor) {
                 idx = bisect(d.cases, xDate);
 
                 var beginning = 0,
-                    end = lines[i].getTotalLength(),
+                    end = 1 // lines[i].getTotalLength(),
                     target = null;
 
                 while (true) {
