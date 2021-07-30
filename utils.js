@@ -26,7 +26,7 @@ function populateCountry(data) {
         .attr("value", function (d) { return d; }) // corresponding value by the action
 }
 
-function updateChart(lineChartComp, line, data, selectedCountry, makeAnnotations, annotations, xScale, yScale) {
+function updateChart(svg, lineChartComp, line, data, selectedCountry, makeAnnotations, annotations, xScale, yScale) {
 
     countryData = data.filter(function(d) { return d.country == selectedCountry;})
 
@@ -39,7 +39,7 @@ function updateChart(lineChartComp, line, data, selectedCountry, makeAnnotations
     last_state = cases[cases.length -1]
 
     d3.select('.annotation-group').html = ''
-    setAnnotation(cases, xScale, yScale)
+    setAnnotation(svg, cases, xScale, yScale)
         // .transition()
         // .duration(1000)
         // .tween('updateAnno',function(d){
@@ -55,7 +55,7 @@ function updateChart(lineChartComp, line, data, selectedCountry, makeAnnotations
         // })
 }
 
-function setAnnotation(cases, xScale, yScale) {
+function setAnnotation(svg, cases, xScale, yScale) {
     // Construct Annotation
 
     last_state = cases[cases.length -1]
@@ -265,13 +265,13 @@ function initializeChart(data, selectedCountry, lineColor) {
         });
 
 
-    setAnnotation(cases, xScale, yScale)
+    setAnnotation(svg, cases, xScale, yScale)
 
     // When the button is changed, run the updateChart function
     d3.select("#country").on("change", function(d) {
         // recover the option that has been chosen
         var selectedOption = d3.select(this).property("value")
         // run the updateChart function with this selected option
-        updateChart(lineChartComp, line, data, selectedOption, makeAnnotations, labels, xScale, yScale)
+        updateChart(svg, lineChartComp, line, data, selectedOption, makeAnnotations, labels, xScale, yScale)
     })
 }
