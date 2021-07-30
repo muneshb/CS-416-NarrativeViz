@@ -169,38 +169,38 @@ function initializeChart(data, selectedCountry, lineColor) {
                 return d;
             });
 
-            // d3.selectAll(".mouse-per-line").attr("transform", function (d, i) {
-            //
-            //     var xDate = xScale.invert(mouse[0]),
-            //         bisect = d3.bisector(function (d) {
-            //             return d.date;
-            //         }).right;
-            //     idx = bisect(d.cases, xDate);
-            //
-            //     beginning = 0,
-            //         end = lines[i].getTotalLength(),
-            //         target = null;
-            //
-            //     while (true) {
-            //         target = Math.floor((beginning + end) / 2);
-            //         pos = lines[i].getPointAtLength(target);
-            //         if (
-            //             (target === end || target === beginning) &&
-            //             pos.x !== mouse[0]
-            //         ) {
-            //             break;
-            //         }
-            //         if (pos.x > mouse[0]) end = target;
-            //         else if (pos.x < mouse[0]) beginning = target;
-            //         else break; //position found
-            //     }
-            //
-            //     d3.select(this)
-            //         .select("text")
-            //         .text(yScale.invert(pos.y).toFixed(0))
-            //         .style("font-size", "12px");
-            //
-            //     return "translate(" + mouse[0] + "," + pos.y + ")";
-            // });
+            d3.selectAll(".mouse-per-line").attr("transform", function (d, i) {
+
+                var xDate = xScale.invert(mouse[0]),
+                    bisect = d3.bisector(function (d) {
+                        return d.date;
+                    }).right;
+                idx = bisect(d.cases, xDate);
+
+                beginning = 0,
+                    end = lines[0].getTotalLength(),
+                    target = null;
+
+                while (true) {
+                    target = Math.floor((beginning + end) / 2);
+                    pos = lines[0].getPointAtLength(target);
+                    if (
+                        (target === end || target === beginning) &&
+                        pos.x !== mouse[0]
+                    ) {
+                        break;
+                    }
+                    if (pos.x > mouse[0]) end = target;
+                    else if (pos.x < mouse[0]) beginning = target;
+                    else break; //position found
+                }
+
+                d3.select(this)
+                    .select("text")
+                    .text(yScale.invert(pos.y).toFixed(0))
+                    .style("font-size", "12px");
+
+                return "translate(" + mouse[0] + "," + pos.y + ")";
+            });
         });
 }
