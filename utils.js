@@ -43,7 +43,7 @@ function initializeChart(data, selectedCountry, lineColor) {
 
     // CONSTRUCT GRAPH CONTAINER
     const margin = { top: 80, right: 150, bottom: 60, left: 100 };
-    const width = 900 - margin.left - margin.right;
+    const width = 1200 - margin.left - margin.right;
     const height = 700 - margin.top - margin.bottom;
 
     let svg = d3
@@ -60,9 +60,9 @@ function initializeChart(data, selectedCountry, lineColor) {
 
     let dates = [...countryData.map(d => dateParser(d.date))];
 
-    let totalCases = [...data.map(d => d.cases)];
+    let totalCases = [...data.map(d => +d.cases)];
 
-    let cases = [...countryData.map(d => d.cases)];
+    let cases = [...countryData.map(d => +d.cases)];
 
     const xScale = d3
         .scaleTime()
