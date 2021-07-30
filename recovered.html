@@ -72,21 +72,24 @@
 
 <body onload='init("data/time_series_covid19_recovered_global.csv", "green")'>
 
+<div class="jumbotron" style="background-color: gray; color: white" align="center">
+  <h1 style="padding-left : 2%">Corona Recoveries by Country</h1>
+  <h2><p style="padding-left : 2%">Let's see how each country has handled the coronavirus.</p>
+  </h2>
+</div>
 <div align="center">
-  <h1>Corona Recoveries in 2021 by Country</h1>
-  <p>
-    Let's see how each state has handled the coronavirus.
-  </p>
-  <p>Hover over the graph for more detail.</p>
 
   <select id="country" name="country"></select>
 
   <div id="container"></div>
+  <br/>
+  <p>Hover over the graph for more detail.</p>
   <div class="pagination">
     <a href="index.html">1</a>
-    <a href="deaths.html">2</a>
-    <a class="active" href="recovered.html">3</a>
-    <a href="resources.html">4</a>
+    <a href="confirmed.html">2</a>
+    <a href="deaths.html">3</a>
+    <a class="active" href="recovered.html">4</a>
+    <a href="resources.html">5</a>
   </div>
 </div>
 

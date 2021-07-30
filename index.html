@@ -70,25 +70,41 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.12.1/d3-annotation.min.js"></script>
 <script src="utils.js"></script>
 
-<body onload='init("data/time_series_covid19_confirmed_global.csv", "blue")'>
+<body>
+
+<div class="jumbotron" style="background-color: gray; color: white" align="center">
+  <h1 style="padding-left : 2%">Corona Cases Report by Country</h1>
+  <h2><p style="padding-left : 2%">Let's see how each country has handled the coronavirus.</p>
+  </h2>
+</div>
 
 <div align="center">
-  <h1>Corona Confirmed Cases in 2021 by Country</h1>
-  <p>
-    Let's see how each state has handled the coronavirus.
+  <p>COVID-19 is caused by a coronavirus called SARS-CoV-2.<br/>
+    Older adults and people who have severe underlying medical conditions like heart or lung disease or diabetes seem to be at higher risk for developing more serious complications from COVID-19 illness.
   </p>
-  <p>Hover over the graph for more detail.</p>
+  <p>This report shows time series report including confirmed cases, deaths and recovered cases.</p>
 
-  <select id="country" name="country"></select>
+  <div class="article-header" align="left">
+    <div class="article">
+      <br/><h2>Objective</h2>
+      <p style="padding-left : 2%">This project aims to look at corona confirmed cases across the world and the impact thereby, on the deaths and the recoveries by each country</p>
+      <br/><h2>Design</h2>
+      <p style="padding-left : 2%">Using the concepts learned in the CS-416 Data Visualization class at University of Illinois Urbana Champaign, I am analysing the growing corona cases in various countries.</p>
+      <p style="padding-left : 2%">This narrative visualization follows the structure of an <b>Interactive Slideshow</b> allowing the user to traverse the slides and look at the growing cases for different countries.</p>
+      <br/><h2>Data</h2>
+      <p style="padding-left : 2%">The dataset used was derived from the JHU CSSE COVID-19 Dataset - Covid cases, deaths and recovered. This dataset is available as a CSV file from <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data#time-series-summary-csse_covid_19_time_series">JHU CSSE COVID-19 Dataset</a> and is free to use.  </p>
+      <p style="padding-left : 2%">
+        This dataset contains daily time series summary tables, including confirmed, deaths and recovered. All data is read in from the daily case report. The time series tables are subject to be updated if inaccuracies are identified in our historical data.
 
-  <div id="container"></div>
+        Three time series tables are for the global confirmed cases, recovered cases and deaths. The tables are renamed time_series_covid19_confirmed_global.csv and time_series_covid19_deaths_global.csv, and time_series_covid19_recovered_global.csv, respectively.</p>
+    </div>
     <br/>
-    <br/>
-  <div class="pagination">
+  <div class="pagination" align="center">
     <a class="active" href="index.html">1</a>
-    <a href="deaths.html">2</a>
-    <a href="recovered.html">3</a>
-    <a href="resources.html">4</a>
+    <a href="confirmed.html">2</a>
+    <a href="deaths.html">3</a>
+    <a href="recovered.html">4</a>
+    <a href="resources.html">5</a>
   </div>
 </div>
 
