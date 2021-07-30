@@ -46,6 +46,7 @@ function updateChart(lineChartComp, line, data, selectedCountry, makeAnnotations
             yTrans = last_state
             return function(t){
                 annotations[0].x = '2021-07-01';
+                annotations[0].y = last_state;
                 annotations[0].note.label = '2021-07-01, ' + last_state
                 makeAnnotations.annotations(annotations)
                 makeAnnotations.update()
