@@ -59,6 +59,9 @@ function initializeChart(data, selectedCountry, lineColor) {
     const dateParser = d3.timeParse("%Y-%m-%d");
 
     let dates = [...countryData.map(d => dateParser(d.date))];
+
+    let totalCases = [...data.map(d => d.cases)];
+
     let cases = [...countryData.map(d => d.cases)];
 
     const xScale = d3
@@ -73,7 +76,7 @@ function initializeChart(data, selectedCountry, lineColor) {
 
     const yScale = d3
         .scaleLinear()
-        .domain([0, d3.max(cases)])
+        .domain([0, d3.max(totalCases)])
         .nice()
         .range([height, 0]);
 
