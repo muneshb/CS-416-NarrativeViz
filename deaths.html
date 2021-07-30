@@ -24,8 +24,50 @@
   .pagination a:hover:not(.active) {
     background-color: #ddd;
   }
+
+  .annotation path {
+      stroke: blue;
+      fill: none;
+  }
+
+  .annotation path.connector-arrow,
+  .title text,
+  .annotation text,
+  .annotation.callout.circle .annotation-subject path {
+      fill: lightyellow;
+  }
+
+  .title text,
+  .annotation text {
+      font-size: 14px;
+  }
+
+  .annotation-note-bg {
+      fill: rgba(255, 255, 255, 0);
+  }
+
+  .annotation-note-title {
+      font-weight: bold;
+  }
+
+  .annotation.xythreshold {
+      cursor: move;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+  text.hover {
+      font-size: 0.7em;
+  }
+
+  text.title {
+      font-size: 1.1em;
+  }
 </style>
 <script src='https://d3js.org/d3.v5.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.12.1/d3-annotation.min.js"></script>
 <script src="utils.js"></script>
 
 <body onload='init("data/time_series_covid19_deaths_global.csv", "red")'>
