@@ -178,7 +178,7 @@ function initializeChart(data, selectedCountry, lineColor) {
                 idx = bisect(d.cases, xDate);
 
                 var beginning = 0,
-                    end = 1 // lines[i].getTotalLength(),
+                    end = lines[i].getTotalLength(),
                     target = null;
 
                 while (true) {
