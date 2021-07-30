@@ -45,8 +45,8 @@ function updateChart(lineChartComp, line, data, selectedCountry) {
             xTrans = '2021-07-01'
             yTrans = last_state
             return function(t){
-                annotations[0].x = x(xTrans(t));
-                annotations[0].note.label = "test"
+                annotations[0].x = '2021-07-01';
+                annotations[0].note.label = '2021-07-01, ' + last_state
                 makeAnnotations.annotations(annotations)
                 makeAnnotations.update()
             }
@@ -231,7 +231,7 @@ function initializeChart(data, selectedCountry, lineColor) {
     const labels = [
         {
             note: {
-                label: "2021-07-01\n" + last_state,
+                label: "2021-07-01, " + last_state,
                 title: "Current state",
             },
             dy: -5,
