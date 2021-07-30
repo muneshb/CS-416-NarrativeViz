@@ -30,11 +30,27 @@ function updateChart(lineChartComp, line, data, selectedCountry) {
 
     countryData = data.filter(function(d) { return d.country == selectedCountry;})
 
-    let cases = [...countryData.map(d => d.cases)];
+    let cases = [...countryData.map(d => +d.cases)];
 
     lineChartComp.transition()
         .duration(1000)
         .attr("d", line(cases));
+
+    last_state = cases[cases.length -1]
+
+    d3.select('.annotation-group')
+        .transition()
+        .duration(1000)
+        .tween('updateAnno',function(d){
+            xTrans = '2021-07-01'
+            yTrans = last_state
+            return function(t){
+                annotations[0].x = x(xTrans(t));
+                annotations[0].note.label = "test"
+                makeAnnotations.annotations(annotations)
+                makeAnnotations.update()
+            }
+        })
 }
 
 function initializeChart(data, selectedCountry, lineColor) {
@@ -215,7 +231,7 @@ function initializeChart(data, selectedCountry, lineColor) {
     const labels = [
         {
             note: {
-                label: "2021-07-01<br/>last_state",
+                label: "2021-07-01\n" + last_state,
                 title: "Current state",
             },
             dy: -5,
@@ -247,7 +263,7 @@ function initializeChart(data, selectedCountry, lineColor) {
                 .classed("hidden", true);
         });
 
-    svg.append("g").attr("class", "annotation-test").call(makeAnnotations);
+    svg.append("g").attr("class", "annotation-group").call(makeAnnotations);
 
     svg
         .selectAll("g.annotation-connector, g.annotation-note")
