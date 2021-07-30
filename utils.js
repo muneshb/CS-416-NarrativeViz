@@ -26,7 +26,7 @@ function populateCountry(data) {
         .attr("value", function (d) { return d; }) // corresponding value by the action
 }
 
-function updateChart(svg, lineChartComp, line, data, selectedCountry, makeAnnotations, annotations, xScale, yScale, dateParser) {
+function updateChart(svg, lineChartComp, line, data, selectedCountry, annotations, xScale, yScale, dateParser) {
 
     countryData = data.filter(function(d) { return d.country == selectedCountry;})
 
@@ -272,6 +272,6 @@ function initializeChart(data, selectedCountry, lineColor) {
         // recover the option that has been chosen
         var selectedOption = d3.select(this).property("value")
         // run the updateChart function with this selected option
-        updateChart(svg, lineChartComp, line, data, selectedOption, makeAnnotations, labels, xScale, yScale, dateParser)
+        updateChart(svg, lineChartComp, line, data, selectedOption, labels, xScale, yScale, dateParser)
     })
 }
