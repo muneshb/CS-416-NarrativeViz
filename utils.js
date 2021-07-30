@@ -39,20 +39,10 @@ function updateChart(svg, lineChartComp, line, data, selectedCountry, xScale, yS
     last_state = cases[cases.length -1]
 
     d3.select('.annotation-group').remove()
-    setAnnotation(svg, cases, xScale, yScale, dateParser)
-        // .transition()
-        // .duration(1000)
-        // .tween('updateAnno',function(d){
-        //     xTrans = '2021-07-01'
-        //     yTrans = last_state
-        //     return function(t){
-        //         annotations[0].x = '2021-07-01';
-        //         annotations[0].y = last_state;
-        //         annotations[0].note.label = '2021-07-01'
-        //         makeAnnotations.annotations(annotations)
-        //         makeAnnotations.update()
-        //     }
-        // })
+
+    setTimeout(function(){
+        setAnnotation(svg, cases, xScale, yScale, dateParser)
+    }, 1000);
 }
 
 function setAnnotation(svg, cases, xScale, yScale, dateParser) {
