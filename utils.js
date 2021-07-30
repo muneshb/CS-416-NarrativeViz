@@ -9,6 +9,13 @@ async function init(file, color) {
 
 function populateCountry(data) {
     let options = [...new Set(data.map(d => d.country))];
+
+    let topCountries = ["US", "India", "Canada", "Mexico", "United Kingdom", "Brazil", "France", "Russia", "Italy", "Argentina"]
+
+    options = options.filter(item => !topCountries.includes(item))
+
+    options.unshift(...topCountries)
+
     // add the options to the button
     d3.select("#country")
         .selectAll('myOptions')
