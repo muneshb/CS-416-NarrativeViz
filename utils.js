@@ -209,32 +209,22 @@ function initializeChart(data, selectedCountry, lineColor) {
 
 
     // CONSTRUCT ANNOTATION
+
+    last_state = cases[cases.length -1]
+
     const labels = [
         {
             note: {
-                label: "2021-07-01",
-                title: "Stay at home begins",
+                label: "2021-07-01<br/>last_state",
+                title: "Current state",
             },
             dy: -5,
             dx: 50,
             data: {
                 x: "2021-07-01",
-                y: 15188,
+                y: last_state,
             },
-            subject: { radius: 5 },
-        },
-        {
-            note: {
-                label: "2020-05-15",
-                title: "Stay at home ends",
-            },
-            dy: 0,
-            dx: 50,
-            data: {
-                x: "2020-05-15",
-                y: 350951,
-            },
-            subject: { radius: 5 },
+            subject: { radius: 8 },
         },
     ];
 
