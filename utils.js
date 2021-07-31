@@ -196,7 +196,7 @@ function initializeChart(data, selectedCountry, lineColor) {
         .append("svg:rect") // append a rect to catch mouse movements on canvas
         .attr("width", width) // can't catch mouse events on a g element
         .attr("height", height)
-        .attr("fill", "none")
+        .attr("fill", "lightyellow")
         .attr("pointer-events", "all")
         .on("mouseout", function () {
             // on mouse out hide line, circles and text
