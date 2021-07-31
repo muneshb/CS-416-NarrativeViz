@@ -73,25 +73,23 @@ function setAnnotation(svg, cases, xScale, yScale, dateParser) {
         .accessors({
             x: (d) => xScale(dateParser(d.x)),
             y: (d) => yScale(d.y),
+        })
+        .on("subjectover", function (annotation) {
+            annotation.type.a
+                .selectAll("g.annotation-connector, g.annotation-note")
+                .classed("hidden", false);
+        })
+        .on("subjectout", function (annotation) {
+            annotation.type.a
+                .selectAll("g.annotation-connector, g.annotation-note")
+                .classed("hidden", true);
         });
-        // .on("subjectover", function (annotation) {
-        //     annotation.type.a
-        //         .selectAll("g.annotation-note")
-        //         .classed("hidden", false);
-        // })
-        // .on("subjectout", function (annotation) {
-        //     annotation.type.a
-        //         .selectAll("g.annotation-note")
-        //         .classed("hidden", true);
-        // });
 
-    svg.append("g").call(makeAnnotations).append("text").attr("transform", "translate(" + xScale(xScale(dateParser('2021-07-01'))) + ", " + yScale(last_state) + ")").text(last_state);
-    //
-    // svg
-    //     .selectAll("g.annotation-connector, g.annotation-note")
-    //     .classed("hidden", false);
+    svg.append("g").attr("class", "annotation-test").call(makeAnnotations);
 
-
+    svg
+        .selectAll("g.annotation-connector, g.annotation-note")
+        .classed("hidden", false);
 }
 
 function initializeChart(data, selectedCountry, lineColor) {
