@@ -53,8 +53,8 @@ function setAnnotation(svg, cases, xScale, yScale, dateParser) {
     const labels = [
         {
             note: {
-                label: "2021-07-01",
-                title: "Recent state",
+                label: last_state,
+                title: "2021-07-01",
             },
             dy: -50,
             dx: 0,
