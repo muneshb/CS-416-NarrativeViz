@@ -53,16 +53,29 @@ function setAnnotation(svg, cases, xScale, yScale, dateParser) {
     const labels = [
         {
             note: {
-                label: "2021-07-01",
-                title: "Current state",
+                label: "2020-03-19",
+                title: "Stay at home begins",
             },
-            dy: -5,
-            dx: 50,
+            dy: -50,
+            dx: 0,
             data: {
-                x: "2021-07-01",
-                y: last_state,
+                x: "2020-03-19",
+                y: 1067,
             },
-            subject: { radius: 8 },
+            subject: { radius: 5 },
+        },
+        {
+            note: {
+                label: "2020-05-25",
+                title: "Stay at home ends",
+            },
+            dy: -150,
+            dx: 0,
+            data: {
+                x: "2020-05-25",
+                y: 97017,
+            },
+            subject: { radius: 5 },
         },
     ];
 
