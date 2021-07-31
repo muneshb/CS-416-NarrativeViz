@@ -85,7 +85,7 @@ function setAnnotation(svg, cases, xScale, yScale, dateParser) {
         //         .classed("hidden", true);
         // });
 
-    svg.append("g").attr("class", "annotation-test").call(makeAnnotations).append("text").attr("transform", "translate(10,3)").text("test");
+    svg.append("g").call(makeAnnotations).append("text").attr("transform", "translate(" + xScale(xScale(dateParser('2021-07-01'))) + ", " + yScale(last_state) + ")").text(last_state);
     //
     // svg
     //     .selectAll("g.annotation-connector, g.annotation-note")
