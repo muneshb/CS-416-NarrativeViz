@@ -76,12 +76,12 @@ function setAnnotation(svg, cases, xScale, yScale, dateParser) {
         })
         .on("subjectover", function (annotation) {
             annotation.type.a
-                .selectAll("g.annotation-connector, g.annotation-note")
+                .selectAll("g.annotation-note")
                 .classed("hidden", false);
         })
         .on("subjectout", function (annotation) {
             annotation.type.a
-                .selectAll("g.annotation-connector, g.annotation-note")
+                .selectAll("g.annotation-note")
                 .classed("hidden", true);
         });
 
@@ -196,7 +196,7 @@ function initializeChart(data, selectedCountry, lineColor) {
         .append("svg:rect") // append a rect to catch mouse movements on canvas
         .attr("width", width) // can't catch mouse events on a g element
         .attr("height", height)
-        .attr("fill", "lightyellow")
+        .attr("fill", "none")
         .attr("pointer-events", "all")
         .on("mouseout", function () {
             // on mouse out hide line, circles and text
