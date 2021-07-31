@@ -54,7 +54,7 @@ function setAnnotation(svg, cases, xScale, yScale, dateParser) {
         {
             note: {
                 label: last_state,
-                title: "2021-07-01",
+                title: "As of 2021-07-01,",
             },
             dy: -50,
             dx: 0,
