@@ -38,7 +38,7 @@ function updateChart(svg, lineChartComp, line, data, selectedCountry, xScale, yS
 
     last_state = cases[cases.length -1]
 
-    d3.select('.annotation-group').remove()
+    d3.select('.annotation-test').remove()
 
     setTimeout(function(){
         setAnnotation(svg, cases, xScale, yScale, dateParser)
@@ -85,11 +85,11 @@ function setAnnotation(svg, cases, xScale, yScale, dateParser) {
                 .classed("hidden", true);
         });
 
-    svg.append("g").attr("class", "annotation-group").call(makeAnnotations);
+    svg.append("g").attr("class", "annotation-test").call(makeAnnotations);
 
     svg
         .selectAll("g.annotation-connector, g.annotation-note")
-        .classed("hidden", true);
+        .classed("hidden", false);
 }
 
 function initializeChart(data, selectedCountry, lineColor) {
